@@ -121,7 +121,7 @@ Since the Oak Security Audit was completed, we have made the following 2 changes
 | ERC721 used  by the protocol            |          None           |
 | ERC777 used by the protocol             |          None            |
 | ERC1155 used by the protocol            |          None           |
-| Chains the protocol will be deployed on | Ethereum |
+| Chains the protocol will be deployed on | We will launch on Ethereum, but we will also have cross-chain reallocations to Base, Arbitrum, Polygon, Mantle and Optimism, and potentially other EVM-compatible chains in the future (TBD) |
 
 ### ERC20 token behaviors in scope
 
