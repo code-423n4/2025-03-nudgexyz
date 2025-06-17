@@ -1,0 +1,3964 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-PUBLIC / nudgexyz-mar
+==============================================================
+
+[03/13/2025 02:31] thebrittfactor (pinned)
+👋 Hello and welcome to the $20,000 in USDC **Nudge.xyz** audit channel!
+
+📆 Audit opens Monday, 17 March 2025 20:00 (20:00 UTC) and runs through Monday, 24 March 2025 20:00 (20:00 UTC) (7 days).
+
+Please give a warm welcome to the Nudge.xyz team, particularly @Raph and @SensoYard, who will be available for questions either here in the channel or via a PRIVATE thread in the WET and UAE timezones (GMT/GMT+4). 
+
+**Notes:**
+- If no valid Highs or Mediums are found, the HM pool is $0 
+- There are no QA awards for this audit. 
+
+🤖 **Documentation bot assistance:** For general questions about the codebase, give our documentation bot a try, by tagging `@Docs Wolf` in any thread (private or public) and asking your question. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources. *Docs Wolf will be available when the audit is live.*
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2025-03-nudgexyz
+
+{Reactions}
+👋 (13) 👍🏻 
+
+[03/13/2025 02:36] thebrittfactor
+Pinned a message.
+
+{Reactions}
+🚀 (7) 
+
+[03/17/2025 20:20] nadir_khan_sec
+good luck everyone
+
+{Reactions}
+❤️ (12) 
+
+[03/17/2025 20:21] luc1jan
+great docs, good luck people
+
+{Reactions}
+🔥 (11) 
+
+[03/17/2025 20:28] 0xjoaovictor
+great docs, guys!
+
+{Reactions}
+❤️ (9) 
+
+[03/18/2025 02:50] pulse0452
+How much `rewardPPQ` we can expect @Raph
+
+
+[03/18/2025 03:30] mosharaf
+No QA rewards !!
+If no HMs are found , how the rewards will be distributed ??
+Or , will there be any reward in that case ?? 
+
+Previously , we've seen whole pot getting distributed based on QAs in this particular case in C4.
+
+{Reactions}
+👆 
+
+[03/18/2025 04:12] kalyansingh
+if no HM then 0 rewards to wardens. Its written in the contest page.
+
+
+[03/18/2025 05:19] nollinex
+@Raph The "Scoping Q & A" section of the README says "Any (all possible ERC20s)" are supported, where as the official documentation says:
+
+"Nudge does not support non-standard ERC20 tokens (fee-on-transfer, rebasing tokens…) and ERC20 tokens with a value returned by decimals( ) that is inaccurate or strictly above 18." (https://docs.nudge.xyz/technical-documentation/smart-contracts)
+
+Am I missing something?
+
+{Embed}
+https://docs.nudge.xyz/technical-documentation/smart-contracts
+Smart Contracts | Nudge
+
+
+[03/18/2025 06:18] elminnyc99
+same question. Need to clarify this so we can ignore the problems with weird tokens.
+
+
+[03/18/2025 07:29] pro_king1
+Is PoC mandatory or not?
+
+
+[03/18/2025 07:34] 0xsorrynotsorry
+it's not. but it's best to include
+
+{Reactions}
+🔥 (2) 
+
+[03/18/2025 07:38] thehxnz
+nice code
+
+
+[03/18/2025 07:41] thehxnz
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-EC95C.png
+
+
+[03/18/2025 07:42] thehxnz
+I think this table serves as the most up-to-date characteristics of accepted ERC20
+
+{Reactions}
+✅ (6) 👍 (3) 
+
+[03/18/2025 08:50] alex_025x
+good luck to all
+
+{Reactions}
+👍 (2) 
+
+[03/18/2025 09:19] tanishq4211
+I am getting `Error: Unknown version provided` when running forge test can someone tell me why I am getting this?
+
+{Reactions}
+🤔 
+
+[03/18/2025 09:58] raphaelroullet
+Take realistic APR values, then you can deduce what we call ROI: If the APR is for a year, the ROI is for the duration of the holding period (we will launch with 1 week by default).
+Then rewardPPQ is `(target token price in USD * ROI * PPQ_DENOMINATOR) / (reward token price in USD)`
+
+{Reactions}
+👍🏻 
+
+[03/18/2025 09:59] raphaelroullet
+That's right 🙂
+
+
+[03/18/2025 10:07] riceee8969
+Hello Nudge team, Just to re-clarify the target chain is Ethereum and `CAMPAIGN_ADMIN_ROLE` is considered trusted right?
+
+
+[03/18/2025 10:15] raphaelroullet
+The target chain is Ethereum and other EVM-compatible chains.
+Define trusted? 😄  (Feel free to open a private thread)
+
+{Reactions}
+🙌 
+
+[03/18/2025 11:15] moray5554
+I'm new in c4, could you suggest - invariants here is the thing SRs must __assume__ to be always true __OR__ if we find a way to break one, then it's an issue? Itself issue which breaks invariant should have any sufficient impact to be evaluated valid H/Ms?
+
+
+[03/18/2025 11:19] tanishq4211
+@Raph  I am getting this error:
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/Screenshot_2025-03-18_at_2.48.44_PM-697E2.png
+
+
+[03/18/2025 11:20] kyosi2963
+I think it should have M/H impact to be considered M/H
+
+{Reactions}
+❤️ 
+
+[03/18/2025 11:21] luc1jan
+@Raph how i open private thread? Do i message you directly?
+
+
+[03/18/2025 11:24] riceee8969
+first icon on top right of discord :hi5:  and then check the private thread option
+
+{Reactions}
+👆 (2) ✅ 
+
+[03/18/2025 11:25] raphaelroullet
+Please include both myself and @SensoYard in your private thread
+
+{Reactions}
+👍 
+
+[03/18/2025 12:43] cd_pandora
+Same bug, same impact but different root cause. Is this considered dup?
+
+
+[03/18/2025 12:44] heliosophistxiv
+no different root cause is almost always different issue
+
+
+[03/18/2025 12:44] heliosophistxiv
+although your questions is not entirely clear - same bug sort of implies same root cause
+
+
+[03/18/2025 12:50] 0xredtrama
+on which chains the protocol will be deployed?
+
+
+[03/18/2025 13:02] sherlockvarm
+ethereum
+
+
+[03/18/2025 13:14] sabanaku77
+@Raph I have created a private thread, please check
+
+{Reactions}
+👀 
+
+[03/18/2025 13:19] owanemi
+hey @Raph are nudge campaigns only going to be deployed on ethereum? in the toml file i’m seeing configs for other chains and example of claiming was also done on base
+
+
+[03/18/2025 13:29] t0x1c.c0de
+Hey Raph,
+Could you please confirm this on contest page too via C4 folks so that it's official for all? The page only states "Ethereum" chain. This could result in disputed issues being logged.
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-096DD.png
+
+{Reactions}
+👍 (2) 
+
+[03/18/2025 13:41] itsmetechjay
+ℹ️ Wardens, we have merged a [PR update](https://github.com/code-423n4/2025-03-nudgexyz/pull/1) to the README to clarify the list of chains for the protocol.
+
+{Reactions}
+✅ (13) ❤️ 
+
+[03/18/2025 15:33] 0xhiros
+@Raph What is the profit for users with the points earned from PointsCampagns?
+
+
+[03/18/2025 15:33] nikhilx0111
+can we assume the campaign admin wont be trusted?
+
+
+[03/18/2025 15:37] luc1jan
+campaign admin can be anyone i believe.
+
+
+[03/18/2025 15:37] nikhilx0111
+yeah but the readme says the campaign administor will be trusted
+
+
+[03/18/2025 15:37] nikhilx0111
+even tho anyone can deploy a contract
+
+
+[03/18/2025 15:38] luc1jan
+Where exactly
+
+
+[03/18/2025 15:39] nikhilx0111
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/Screenshot_2025-03-18_210915-6009F.png
+
+
+[03/18/2025 15:58] luc1jan
+It doesn't say its trusted
+
+
+[03/18/2025 15:59] luc1jan
+oh i see, didnt catch this before
+
+{Reactions}
+🫡 
+
+[03/18/2025 16:05] plamkata
+@Raph @SensoYard How often does the SWAP role on Li.fi reallocate rewards
+
+
+[03/18/2025 16:06] plamkata
+And how does the user interact with it to be deemed as a participant?
+
+
+[03/18/2025 16:18] riceee8969
+its explained in the docs smart contracts section
+
+{Reactions}
+❤️ 
+
+[03/18/2025 16:18] riceee8969
+it basically does it for every swap call made
+
+
+[03/18/2025 16:19] riceee8969
+where can I find the Li.fi swap contract that users interact with?
+
+{Reactions}
+❤️ 
+
+[03/18/2025 16:24] riceee8969
+Is it this one https://github.com/lifinance/contracts/tree/main/src (?) Thank you.
+
+{Embed}
+https://github.com/lifinance/contracts/tree/main/src
+contracts/src at main · lifinance/contracts
+LI.FI Smart Contracts. Contribute to lifinance/contracts development by creating an account on GitHub.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/contracts-9BB90
+
+
+[03/18/2025 16:57] riceee8969
+>  However, because this isn't just a "simple" swap, Nudge also encodes in the transaction a contract call for Li.fi's smart contracts to execute after the tokens are swapped.
+
+Could someone clarify the control flow after a swap is completed via Li.fi's SDK? Specifically, which smart contract(s) are being interacted with again to call the `handleReallocation` function? Based on my understanding of the SDK documentation, there doesn’t seem to be a function that accepts an encoded contract call for Li.fi's smart contracts to execute. I'd appreciate any insights on how this process works!
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-F911C.png
+
+
+[03/18/2025 17:19] pindarew
+@Raph @SensoYard Hello guys, can you give more info about Reallocation Flow and how things works with LI.FI Integration, thanks!
+
+
+[03/18/2025 17:33] raphaelroullet (pinned)
+I see there's quite a few questions around the whole flow and integration with Li.fi.
+
+I will update our docs but note that we are using the following:
+- from their SDK: https://docs.li.fi/integrate-li.fi-sdk/request-routes-quotes#request-contract-call-quote
+- which I believe is a wrapper for this API endpoint: https://docs.li.fi/li.fi-api/li.fi-api/requesting-a-quote/cross-chain-contract-calls
+
+{Reactions}
+👍 (3) 
+
+[03/18/2025 17:37] raphaelroullet (pinned)
+If you want to get a better understanding of the whole flow onchain for a reallocation swap and how `handleReallocation` is called, I think it's helpful to inspect the following transaction that we have included in the README:
+
+https://basescan.org/tx/0xe11e8013db2118413b91e9281dd253ab0cb4dcb3782567262ab362aebdb7d033
+
+I will try to provide an example of a transaction for a cross-chain reallocation as well.
+
+{Embed}
+https://basescan.org/tx/0xe11e8013db2118413b91e9281dd253ab0cb4dcb3782567262ab362aebdb7d033
+Base Transaction Hash (Txhash) Details | BaseScan
+Ethereum (ETH) detailed transaction info for txhash 0xe11e8013db2118413b91e9281dd253ab0cb4dcb3782567262ab362aebdb7d033. The transaction status, block confirmation, gas fee, Ethereum, and token transfer are shown.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/og-446D5.jpg
+
+
+[03/18/2025 17:47] itsmetechjay
+Pinned a message.
+
+
+[03/18/2025 17:47] itsmetechjay
+Pinned a message.
+
+
+[03/18/2025 19:40] elvisvan
+`forge test -l` to list available tests
+`forge test --match-test [test name]` to run test 
+(`forge t -vvvvv --mt` for maximum verbosity)
+
+**learn your syntaxes!!**
+
+
+[03/18/2025 19:42] elvisvan
+remember to ` forge --help`  and read them all
+
+
+[03/18/2025 20:07] plamkata
+Thanks for the quick response. Another question that might be useful, but I don't think is covered is how trusted are campaign creators? I am not talking about the assigned admin, but the creator itself, if he can use a set of parameters that can help him steal funds from his users, would that be valid or would it be deemed a user mistake for using a malicious campaign?
+
+{Reactions}
+👍 (3) ➕ (4) 
+
+[03/18/2025 21:39] 0xbyteknight
+@Raph @SensoYard Hello guys, 
+Are additional rewards from referral program handled off-chain?
+
+
+[03/18/2025 23:59] 4mj3x
+i'm curious, is there already a version of this protocol already deployed or this will be the first launch ?
+
+
+[03/19/2025 00:00] elvisvan
+first launch
+
+{Reactions}
+🫡 👍 
+
+[03/19/2025 01:10] benterkiii
+is there any diagram ??
+
+{Reactions}
+👀 🔥 
+
+[03/19/2025 05:25] huwg6701
+@Raph  @SensoYard  under what exact conditions will your invalidate a participation?
+
+
+[03/19/2025 06:27] huwg6701
+Sorry this might be similar to previous questions, but we have documentation on ERC20 behaviors in/out of scope however the campaign creation is permissionless so any sort of tokens can be used. Although there is nothing to stop a Campaign being created using out of scope tokens, do we need to just ignore this scenario?
+
+{Reactions}
+👍 (2) 
+
+[03/19/2025 06:32] deeney3866
+This suppose to be a private question.
+
+
+[03/19/2025 07:53] cd_pandora
+I meannnn 😂
+
+
+[03/19/2025 08:35] luc1jan
+Would cross chain swaps be possible inside app or `from` token will always be on the same chain as `target` token?
+
+
+[03/19/2025 08:35] nikhilx0111
+they are avoiding this question it seems so we gotta trust the readme
+
+
+[03/19/2025 08:36] luc1jan
+I think it's pretty clear we are ignoring problems with "out of scope" tokens in readme
+
+{Reactions}
+👍 (3) 
+
+[03/19/2025 09:18] plamkata
+Welp, all functions are permissioned by trusted roles so good luck on that
+
+
+[03/19/2025 09:23] pfapostol
+Yes, the system appears to be a very closed (complete) loop that does nothing edgy/permissionless to cause problems.
+
+
+[03/19/2025 09:30] riceee8969
+Well Im not sure about this one, but I asked something a bit similar to this, regarding the campaign admins (about how they can withdraw the available rewards anytime they want unexpectedly), but the reply was
+
+> Hello! With that definition then yes they can be considered trusted. It's their campaign they're running so if they want to withdraw all rewards they should communicate beforehand, deactivate then withdraw as you said otherwise they might disappoint some users, but ultimately that's up to them and out of scope from a protocol perspective.
+
+
+[03/19/2025 09:31] riceee8969
+I think possible, because they are using Li.Fi for their swaps, Im not certain tho
+
+
+[03/19/2025 09:38] luc1jan
+I don't see problem with this. Because they can withdraw only unallocated rewards. This would have no impact on anyone
+
+{Reactions}
+👍 
+
+[03/19/2025 09:44] riceee8969
+Well the impact here isnt a high or med but this would be unexpected DoS for the users, if a campaign admin has the power to withdraw their rewards anytime they want to without deactivating the campaign prior to the withdrawal. Or if we think more then maybe grieving the protocol by repeatedly doing this, since theres no incentive required to deploy a campaign
+
+
+[03/19/2025 09:49] riceee8969
+also for this just saw this update
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-FB376.png
+
+{Reactions}
+✅ (2) 
+
+[03/19/2025 09:49] luc1jan
+I see what you mean, but users see unallocated rewards of each campaign, they won't try to participate because it's clear there is no rewards available. UI would rank campaigns based on rewards and APR and probably hide ones with no rewards (I assume)
+
+{Reactions}
+🫡 (2) 👍 (3) 👆 
+
+[03/19/2025 09:51] riceee8969
+true
+
+
+[03/19/2025 10:00] undefined_joe
+guys before reporting an issue. make sure to check the previous audit of the codebase by OAK security (link is in README). I just spent about 2 hours, writing a report that is already there.
+
+{Reactions}
+👍 (10) 🥲 (5) 
+
+[03/19/2025 10:01] undefined_joe
+Goodluck to everyone participating.
+
+
+[03/19/2025 10:09] sabanaku77
+https://tenor.com/view/tracoon-tracoon-too-rich-tracoon-suffering-from-success-gif-1458791985615496704
+
+{Embed}
+https://tenor.com/view/tracoon-tracoon-too-rich-tracoon-suffering-from-success-gif-1458791985615496704
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/tracoon-tracoon-too-rich-607A7.png
+
+{Reactions}
+😂 
+
+[03/19/2025 10:36] raphaelroullet
+Since campaign deployment is permissionless, we can't fully trust any campaign deployed. For that reason we'll have a whitelist on Nudge.xyz and display appropriate warnings to users for campaigns we haven't vetted.
+
+
+[03/19/2025 10:37] raphaelroullet
+Yes, referrals gives you Nudge points which are handled off-chain.
+
+{Reactions}
+👍🏻 
+
+[03/19/2025 10:40] raphaelroullet
+We support cross-chain reallocation swaps so from Token would be on chain A and target token on chain B.
+
+{Reactions}
+✅ (3) 
+
+[03/19/2025 10:41] 0xbyteknight
+Ah, that must hurt 🥲
+
+
+[03/19/2025 13:38] sreewin
+guys Does the nudge interface support batch transaction on the lifi swap provider when swapping assets?
+
+{Reactions}
+🤔 
+
+[03/19/2025 13:49] kirobrejka_80610
+the expected inputs for `rewardPPQ` are <= 1e15, right?
+
+
+[03/19/2025 13:51] nikhilx0111
+they used 1e13 in tests
+
+{Reactions}
+👍 
+
+[03/19/2025 16:08] raphaelroullet
+If by that you mean swapping multiple, different fromTokens to a targetToken, then no
+
+
+[03/19/2025 16:08] raphaelroullet
+rewardPPQ can be bigger than 1e15
+
+{Reactions}
+👍 (3) 
+
+[03/19/2025 17:10] hamid3780
+I've not been able to open the past report from oak-security, is anyone facing the same issue, I've tried multiple times
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/Screenshot_20250319_180013_Chrome-39951.jpg
+
+
+[03/19/2025 17:10] hamid3780
+Both PC and mobile, if it's allowed can someone please send me the report on here. It will be much appreciated 🙏
+
+
+[03/19/2025 17:11] unpluggedtj
+Download it and open maybe
+
+{Reactions}
+👍 
+
+[03/19/2025 17:12] 0xbyteknight
+Check your dm
+
+
+[03/19/2025 17:15] hamid3780
+Thanks alot! 🫡
+
+
+[03/19/2025 17:28] riceee8969
+mostly some extension issue open in incognito
+
+{Reactions}
+👍 
+
+[03/19/2025 19:49] 0xbyteknight
+Hey
+
+I found the following example in the OAK Audit Report -> 
+"For example, if a user has not held the required tokens for the required period."
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/Screenshot_2025-03-19_at_20.49.06-1F82B.jpg
+
+{Reactions}
+👍 
+
+[03/19/2025 20:03] 0xspryon
+Hi @Raph , @SensoYard. Concerning the `invalidateParticipations` method.
+Is the nudge operator an automated system or is it a human being?
+
+Asking more so to know if there is a grace period between when a campaign participation is marked for invalidation and when it effectively gets invalidated and if the recipient of said participation has any recourse to reverse the decision of invalidating his participation right at the instant T before his participation gets invalidated.
+
+
+[03/20/2025 00:33] glightspeed
+Explained in here: https://docs.nudge.xyz/technical-documentation/for-users/earning-rewards
+
+
+[03/20/2025 00:33] glightspeed
+Looks like protocol heaviliy relies on off-chain operators
+
+{Reactions}
+✅ (2) 
+
+[03/20/2025 07:30] luc1jan
+Automated, it's monitored periodically, if you fail condition, you are invalidated
+
+{Reactions}
+👍 
+
+[03/20/2025 08:00] knight18695
+Its the balance that is monitored right?
+
+
+[03/20/2025 09:14] riceee8969
+The docs have it explained very nicely, I suggest to read the docs once, it will clear any doubts with invalidation
+
+
+[03/20/2025 09:17] cd_pandora
+Yes. Once you go below threshold it invalidates your participation.
+
+{Reactions}
+✅ 
+
+[03/20/2025 09:35] 0xtheanzrider
+Go to Nudge.xyz website, go to the menu and click on previous audit then download
+
+
+[03/20/2025 09:41] 0xtheanzrider
+Also Question by pausing a campaign does it mean that the campaign has be ended or just paused if so what then happens if a protocol wants to end there campaign  or are   campaign just paused forever if the protocol doesn't want to continue
+
+
+[03/20/2025 10:02] tough111
+how to create private thread
+
+
+[03/20/2025 10:03] tough111
+could you explain about condition?
+
+
+[03/20/2025 10:04] bube14
+https://discord.com/channels/810916927919620096/1347260216093311006/1351516735542661183
+
+
+[03/20/2025 10:52] shubu25
+@Raph  do check your private request box. I have some quesction regarding protocol
+
+{Reactions}
+👀 
+
+[03/20/2025 11:47] raphaelroullet
+If a protocol wants to stop a campaign,  we would recommend to them the following action plan:
+1. We would communicate in advance that the campaign is about to be stopped in X days (they could communicate to)
+2. Then we would call `setIsCampaignActive()` to deactivate the campaign and prevent any new participation
+3. Protocol withdraw rewards (if there are any left in the campaign contract)
+
+
+[03/20/2025 11:52] raphaelroullet
+Sorry, I haven't accepted any friend request. If you have a question please create a private thread 🙂
+
+{Reactions}
+🫡 (2) 
+
+[03/20/2025 11:58] 0xtheanzrider
+Ohh thanks alot, now I understand
+
+{Reactions}
+hi5 
+
+[03/20/2025 12:03] luc1jan
+balance has to be >= sum of all participations amounts I believe
+
+{Reactions}
+✅ 
+
+[03/20/2025 12:58] tough111
+If not  then which participation do you invalidate? If there are multiple participations, which one do you invalidate?
+
+
+[03/20/2025 12:59] werulez99
+those pID's which are not in the wallet.That's what i think tho
+
+
+[03/20/2025 13:00] heliosophistxiv
+it's described in the docs
+
+
+[03/20/2025 13:00] heliosophistxiv
+and maybe it was answered in the chat too
+
+
+[03/20/2025 13:00] luc1jan
+check faq for users in docs
+
+{Reactions}
+👍 
+
+[03/20/2025 13:17] jivko.donchev2
+rewardToken can be any ERC20 token, right?
+
+
+[03/20/2025 13:21] heliosophistxiv
+yes
+
+{Reactions}
+❤️ 
+
+[03/20/2025 13:49] raphaelroullet
+The readme defines which ones are in scope
+
+{Reactions}
+❤️ 
+
+[03/20/2025 14:21] 0xslowbug
+@Raph I wanted to understand which chains it would be deployed on. Is it just Ethereum?
+Or will factory and nudge campaign be deployed on other evm chains?
+
+
+English isn’t my first language so bear with me
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-71BF1.png
+
+
+[03/20/2025 14:29] mrfalsegenius
+You're about to cross the line Alfie
+
+{Reactions}
+😂 (4) 
+
+[03/20/2025 14:30] unpluggedtj
+I suppose the readme means that the base chain for **now** will stay ethereum but re-allocations to other chains is possible (means the positions on other chains will be monitored  as well by the nudge team)
+
+
+[03/20/2025 14:30] 4mj3x
+you front-run him
+
+{Reactions}
+🤣 (4) 
+
+[03/20/2025 14:31] mrfalsegenius
+Beat them in their own game
+
+{Reactions}
+😂 (3) 
+
+[03/20/2025 14:32] 0xslowbug
+Still confusing to me😬
+
+Will they deploy on other chains later?
+
+I get that they’ll use ethereum for now
+
+
+[03/20/2025 14:32] unpluggedtj
+Yeah they will deploy on other chains later but re-allocated funds would be monitored (this is my inference)
+
+
+[03/20/2025 14:33] unpluggedtj
+TrueGenius 😉
+
+{Reactions}
+❤️ 
+
+[03/20/2025 14:33] mrfalsegenius
+Tell that to me once I get the red color like yours
+
+{Reactions}
+🫡 
+
+[03/20/2025 14:35] 0xslowbug
+Oh thanks
+
+
+[03/20/2025 15:59] riceee8969
+Hi!
+For launch we'll have:
+Single chain realloc on Eth mainnet
+Single chain realloc on one of the L2s mentioned
+Cross chain realloc from mainnet to one of the L2s listed
+
+I had asked it in a PT earlier because the wording confused me too
+
+
+[03/20/2025 16:00] raphaelroullet
+That's right 👆 , sorry for the confusing wording
+
+
+[03/20/2025 16:39] vad37
+Started a thread.
+
+
+[03/20/2025 16:42] dot_cloud
+maybe private thread ser @VAD37 ?
+
+{Reactions}
+✅ (3) 
+
+[03/20/2025 18:49] 4mj3x
+Is SWAP_CALLER a bot ?
+
+
+[03/20/2025 19:08] keivou
+I think swap_caller is the li.fi api, so it's kind of a bot I guess
+
+{Reactions}
+👍 
+
+[03/20/2025 20:14] heliosophistxiv
+yes SWAP_CALLER role is another smart contract check the tx here to see an example: https://basescan.org/tx/0xe11e8013db2118413b91e9281dd253ab0cb4dcb3782567262ab362aebdb7d033
+
+{Embed}
+https://basescan.org/tx/0xe11e8013db2118413b91e9281dd253ab0cb4dcb3782567262ab362aebdb7d033
+Base Transaction Hash (Txhash) Details | BaseScan
+Ethereum (ETH) detailed transaction info for txhash 0xe11e8013db2118413b91e9281dd253ab0cb4dcb3782567262ab362aebdb7d033. The transaction status, block confirmation, gas fee, Ethereum, and token transfer are shown.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/og-446D5.jpg
+
+{Reactions}
+👍 (3) 
+
+[03/20/2025 20:46] heliosophistxiv
+I posted a quick tip regarding transaction analysis: https://x.com/HeliosophistXIV/status/1902823576467624167
+Hopefully posting this is not against the rules
+
+{Embed}
+https://twitter.com/HeliosophistXIV/status/1902823576467624167
+HeliosophistXIV (@HeliosophistXIV) on X
+1/ Security research tip 🧵
+Use @Phalcon\_xyz to analyze function call trees\. To see why it's useful let's see a concrete example with the currently ongoing @nudgexyz contest\.
+X
+
+{Reactions}
+👍 (4) 🔥 (3) 🐐 (2) 
+
+[03/21/2025 00:08] knight18695
+I wanted to understand the purpose of the toAmount variable Input 
+I haven't been able to find the need in the documentation can anyone help me out 🥲
+
+
+[03/21/2025 00:50] _hrmneffdi
+@Raph  hi sir, is fee in factory used only for future campaign or old campaign as well?
+
+
+[03/21/2025 04:24] daniel526
+where are them bugs?
+
+{Reactions}
+🤣 (5) 
+
+[03/21/2025 04:26] 0xslowbug
+😂
+3000 submissions at the end of the day
+
+Still baffles me how this happens
+
+{Reactions}
+😂 (3) 
+
+[03/21/2025 04:57] derastephh
+Lmaooo...started yesterday and still searching
+
+
+[03/21/2025 04:59] 4mj3x
+“CRITICAL - The state variable `admin` is marked as public so anyone can change it”
+
+{Reactions}
+😂 (11) 
+
+[03/21/2025 05:01] benterkiii
+Probably more than 50% of those
+
+{Reactions}
+😂 (4) 
+
+[03/21/2025 05:12] tough111
+It is prohibited to expose such sensitive information in public channels.
+
+{Reactions}
+😂 (8) 
+
+[03/21/2025 05:16] pfapostol
+But none of this matters because the more critical issue is that in Ethereum there is a probability of about 8.6×10⁻⁷⁶% that an admin's private key will be brute forced on the first try.
+
+{Reactions}
+😂 (7) 
+
+[03/21/2025 06:22] karthik6783
+can anyone confirm that the bugs that got reported in the previous audit  have been resolved and updated in the codebase ? or those which have been marked as Acknowledged are not updated yet in the codebase ?
+
+
+[03/21/2025 06:24] pfapostol
+"Acknowledged" usually means that the problem is known, but there is no intention to fix it.
+
+{Reactions}
+👍 ✅ 
+
+[03/21/2025 07:23] derastephh
+Are campaign admins allowed to delete campaigns even when there are some participants and the campaign hasn't ended?
+
+
+[03/21/2025 07:32] c_moose
+What do you mean by "delete" ser? I don't see any deletion, just pausing and deactivation
+
+{Reactions}
+👍 (2) 
+
+[03/21/2025 09:47] prasadlak
+@Raph Pls check PT
+
+{Reactions}
+👍 👀 
+
+[03/21/2025 09:59] raphaelroullet
+From the docs:
+
+> The percentage of fee charged can be changed by the Nudge team, by calling updateFeeSetting() on NudgeCampaignFactory . The change will only apply to new campaigns deployed thereafter.
+
+Hope that answers your question
+
+
+[03/21/2025 10:08] elser17
+@Raph  How often is monitored whether a participant is holding the required amount of targetTokens?
+
+
+[03/21/2025 10:53] 0xslowbug
+Pls Check private thread sir
+
+
+[03/21/2025 10:57] bugsfinder0x
+@Raph Can you check my Pt please?
+
+
+[03/21/2025 11:07] punisher1303
+Yeah, here is a quick overview of `toAmount` variable input,
+the `toAmount` variable is the NUMBER OF TOKENS that will be used to determine the REWARD AMOUNT. 
+
+for example, suppose `toAmount` = 100, which means you're calculating the reward for someone who has 100 of the "target tokens".
+
+
+[03/21/2025 11:09] punisher1303
+Just want to ask, in `NudgeCampaign.sol` is feeBps user-input based variable? I mean it can be set by the user or it have to be a CONSTANT VALUE or something? 
+
+Anyone having any idea about this?
+
+
+[03/21/2025 11:11] pro_king1
+@AffanImran.sol feeBps is going to be set  by Nudge Admin role and by default it is 1000(10%).
+
+{Reactions}
+👍 (3) ✅ 
+
+[03/21/2025 12:05] elser17
+All the thing about Nudge points is managed offchain?
+
+
+[03/21/2025 12:06] pro_king1
+@eLSeR17 Yeah sponsor said that is off-chain
+
+{Reactions}
+👍 (2) ✅ 
+
+[03/21/2025 12:46] derastephh
+I think this is monitored by the backend
+
+
+[03/21/2025 12:47] derastephh
+Which will then trigger invalidateparticipation asap
+
+
+[03/21/2025 13:28] raphaelroullet
+Going through the backlog of private thread messages now!
+
+{Reactions}
+🔥 
+
+[03/21/2025 13:29] raphaelroullet
+You can assume an interval between every 5 and 10 minutes, with some checks at random times as well
+
+
+[03/21/2025 14:59] bryan_conquer
+the website is not coming up..
+
+
+[03/21/2025 15:04] elvisvan
+how did you even type that power -76 number?
+
+
+[03/21/2025 15:11] raphaelroullet
+https://docs.nudge.xyz/technical-documentation/smart-contracts/security-audits
+
+{Embed}
+https://docs.nudge.xyz/technical-documentation/smart-contracts/security-audits
+Security Audits | Nudge
+
+
+[03/21/2025 16:01] pkabhi
+how do campaign gets the rewardTokens other than initialRewardAmount?
+
+
+[03/21/2025 16:04] derastephh
+By funding?
+It's stated in the docs
+
+
+[03/21/2025 18:27] dot_cloud
+by sending the reward token amount directly to the campaign contract
+
+
+[03/21/2025 19:56] nikhilx0111
+he imported openzeppelins safemath library
+
+{Reactions}
+😂 (4) 
+
+[03/21/2025 23:45] benterkiii
+hello guys, 
+for the points campaign, the toToken (Address of the token being acquired) is points ??
+
+
+[03/22/2025 04:21] alexzhang8602
+Hello, @Raph @SensoYard Please check private thread "Question"
+
+{Reactions}
+👀 
+
+[03/22/2025 06:38] riceee8969
+To token is the target token, rewards are in points
+
+
+[03/22/2025 07:11] shubu25
+there is not feeBps setting function . is the feeBps set to 10% as written in
+
+
+[03/22/2025 07:14] shubu25
+and if it is set by admin while creating campaign the is there any cap for this ?
+
+
+[03/22/2025 07:14] shubu25
+@Raph
+
+
+[03/22/2025 07:46] dot_cloud
+https://github.com/code-423n4/2025-03-nudgexyz/blob/88797c79ac706ed164cc1b30a8556b6073511929/src/campaign/NudgeCampaignFactory.sol#L250-L256
+
+{Reactions}
+🫡 ✅ 
+
+[03/22/2025 08:48] owanemi
+use a vpn
+
+
+[03/22/2025 12:30] knight18695
+Is the factory also used in deploying the nudgePointCampigncontract  ?
+
+
+[03/22/2025 13:12] raphaelroullet
+No
+
+
+[03/22/2025 14:54] raphaelroullet
+Adding on to that, here's an example of a **cross-chain** reallocation swap:
+Eth Mainnet (eth) -> Base (DAI)
+
+https://scan.li.fi/tx/0x5789bf00c8501802c352547b5b1f00cdb92e4b97d7f63326f2ac70b958d83e1c
+
+
+[03/22/2025 14:57] jeremias797
+Started a thread.
+
+
+[03/22/2025 17:00] 0xrochimaru
+solid codebase :chefskiss:
+
+{Reactions}
+💯 (7) 🙏 
+
+[03/22/2025 17:01] mohd.shadab
+Everything is damn Clean
+
+{Reactions}
+🙏 
+
+[03/22/2025 17:37] mohd.shadab
+@Raph Hey, I have sent you a message in private thread, please check.
+
+
+[03/22/2025 17:46] elvisvan
+jokes aside can you actually view how many submissions exist already?
+
+
+[03/22/2025 18:13] 0xslowbug
+Not sure
+
+
+[03/22/2025 18:22] 0xrochimaru
+Once the competition ends only SRs can tell how my submissions are in total
+
+{Reactions}
+👍🏻 
+
+[03/22/2025 18:39] 0xspryon
+@Raph quick question.
+1. We expect the majority of native token reallocation to happen in scenarii of cross chain reallocations correct?
+
+2. We expect the majority of ERC20 token reallocations to happen within the same chain. correct?
+
+3. to a lesser extent, we expect cross chain ERC20 to ERC20 reallocations, correct?
+
+
+[03/22/2025 21:11] 0xspryon
+Is there a mandatory POC rule for this contest?
+
+
+[03/22/2025 22:53] laquica6728
+Hey all, is POC required for medium findings ?
+
+
+[03/22/2025 23:44] raphaelroullet
+Correct, for cross-chain reallocations we'll mostly have native tokens as target token but that's more of a business decision not a technical one
+
+{Reactions}
+👍 
+
+[03/22/2025 23:46] pro_king1
+@0xspryon @LaQuica https://discordapp.com/channels/810916927919620096/1347260216093311006/1351458634810392606
+
+{Reactions}
+👍 
+
+[03/23/2025 08:53] laquica6728
+Thanks
+
+
+[03/23/2025 11:20] derastephh
+Submitted 77 bugs
+All admin faults
+
+{Reactions}
+🤔 (2) 👀 (2) 
+
+[03/23/2025 11:22] mrfalsegenius
+More like 10 admin faults since this is C4.
+
+
+[03/23/2025 11:23] pro_king1
+haha So am I supposed to review it again??
+
+{Reactions}
+🤣 
+
+[03/23/2025 11:23] mrfalsegenius
+Yes, just do it
+
+{Reactions}
+👍 
+
+[03/23/2025 11:28] derastephh
+Just let it go bro
+
+{Reactions}
+😂 
+
+[03/23/2025 11:28] derastephh
+Be like me who gave up
+
+{Reactions}
+🤣 (3) 
+
+[03/23/2025 11:28] derastephh
+😅
+
+
+[03/23/2025 11:28] pro_king1
+it was very solid code base
+
+
+[03/23/2025 11:34] derastephh
+For a while i thought i was on to something but tests got stephennwebor@gmail.com invalidated
+
+
+[03/23/2025 11:34] derastephh
+That was the last straw
+
+
+[03/23/2025 11:34] derastephh
+Looking forward to learning from the submissions
+
+
+[03/23/2025 11:35] derastephh
+Off to another contest
+
+
+[03/23/2025 11:35] pro_king1
+Yeah If there are valid submissions it will be interesting and good for learning.
+
+
+[03/23/2025 12:43] mgnfy_view
+Who is the swap caller? The Li.Fi relayer itself?
+
+
+[03/23/2025 12:43] cd_pandora
+Li Fi. Yes
+
+{Reactions}
+💜 (2) 
+
+[03/23/2025 15:15] mylifechangefast.eth_70767
+Funny thing is that a solo can be found
+
+
+[03/23/2025 15:43] ochuko_wh.
+Hi guys, please I want to clarify
+
+Must you win a contest for your name to show on the leaderboard?
+
+{Reactions}
+👍 
+
+[03/23/2025 15:55] ochuko_wh.
+Like must you have a valid submission first before you can see your name in the leaderboard of a contest you joined in?
+
+
+[03/23/2025 21:15] derastephh
+Yes
+
+{Reactions}
+👍 
+
+[03/23/2025 22:03] benterkiii
+very solid ❌ 
+very centralized ✅
+
+{Reactions}
+😂 
+
+[03/23/2025 22:17] 4mj3x
+LOL, we should've gotten the server-side code to audit too
+
+{Reactions}
+👌 
+
+[03/23/2025 22:52] werulez99
+you won't believe it guys but i found a bug 👌
+
+{Reactions}
+✅ (5) 🔥 (4) 
+
+[03/23/2025 22:53] loptuskr
+👍🏻
+
+
+[03/24/2025 03:01] 0xrochimaru
+https://tenor.com/view/oh-yeah-thats-it-yes-cheer-got-it-gif-17698716
+
+{Embed}
+https://tenor.com/view/oh-yeah-thats-it-yes-cheer-got-it-gif-17698716
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/oh-yeah-thats-it-155CB.png
+
+{Reactions}
+😂 (4) 
+
+[03/24/2025 03:57] aarif02
+https://tenor.com/view/buggriddy-lusgifs-bug-griddy-griddy-gif-1934725039210711653
+
+{Embed}
+https://tenor.com/view/buggriddy-lusgifs-bug-griddy-griddy-gif-1934725039210711653
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/buggriddy-lusgifs-23D75.png
+
+
+[03/24/2025 03:57] aarif02
+The bug 😅
+
+{Reactions}
+😂 (3) 
+
+[03/24/2025 05:29] mike_bello90
+hi @Raph and @SensoYard  I wrote you a couple of question in a PT can you help me please, thank you
+
+{Reactions}
+👀 
+
+[03/24/2025 06:52] nbody
+there are 3000 submissions?? what?😂
+
+
+[03/24/2025 06:53] 0xslowbug
+Just joking but there would be a lot of submissions 😂
+
+
+[03/24/2025 06:53] nbody
+oh you had me shocked for a second, this codebase is pretty tight, not that much room for that many findings.
+
+
+[03/24/2025 07:00] pfapostol
+It's basically a database on a blockchain, not an app. The only problem here is that there are many ways for trusted roles to abuse the system, although in C4 this is always considered a low-severity issue.
+
+
+[03/24/2025 07:09] mgnfy_view
+https://github.com/lifinance/contracts/blob/b8c966aad30407b3f579723847057729549fd353/deployments/mainnet.json
+
+{Embed}
+https://github.com/lifinance/contracts/blob/b8c966aad30407b3f579723847057729549fd353/deployments/mainnet.json
+contracts/deployments/mainnet.json at b8c966aad30407b3f579723847057...
+LI.FI Smart Contracts. Contribute to lifinance/contracts development by creating an account on GitHub.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/contracts-256CF
+
+
+[03/24/2025 07:09] mgnfy_view
+Which contract is nudge interacting with?
+
+
+[03/24/2025 07:10] pfapostol
+"Executor": "0x2dfaDAB8266483beD9Fd9A292Ce56596a2D1378D" probably
+
+
+[03/24/2025 07:19] cd_pandora
+https://tenor.com/view/solo-leveling-jin-woo-gif-4356159487042609187
+
+{Embed}
+https://tenor.com/view/solo-leveling-jin-woo-gif-4356159487042609187
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/solo-leveling-73193.png
+
+{Reactions}
+🤣 (2) 
+
+[03/24/2025 07:19] cd_pandora
+A bug that speaks?
+
+{Reactions}
+🤣 (2) 
+
+[03/24/2025 07:26] nbody
+wait so you're telling me, in a system as closed as this one, if a trusted role(basically everyone) can cause something bad, it will still be low?
+
+{Reactions}
+🤣 (2) 
+
+[03/24/2025 07:27] pfapostol
+Yes
+
+
+[03/24/2025 07:27] nbody
+I think it then becomes an impact game, how much impact can you prove
+
+{Reactions}
+✅ 
+
+[03/24/2025 07:29] pfapostol
+https://docs.code4rena.com/awarding/judging-criteria/supreme-court-decisions-fall-2023#verdict-severity-standardization-centralization-risks
+
+{Embed}
+https://docs.code4rena.com/awarding/judging-criteria/supreme-court-decisions-fall-2023
+Decisions from the inaugural Supreme Court session, Fall 2023 | Cod...
+
+
+[03/24/2025 07:29] nbody
+thats quite unfortunate. We shall see about that.. Im going to get a piece of that cake
+
+
+[03/24/2025 07:31] pfapostol
+Also li.fi's `Executor` approves max amount, this is the second thing in this protocol that looks promising but is not actually a bug.
+
+
+[03/24/2025 07:32] pfapostol
+If there is a real H/M, it will be interesting to learn about it, after contest.
+
+{Reactions}
+❤️ (2) 
+
+[03/24/2025 08:09] riceee8969
+Well there’s a reason they are mentioned as trusted. If we dont consider them trusted then there’s a ton of things u can report tbh.
+
+
+[03/24/2025 08:10] nbody
+oh I did get it the first time. I just didn't know.
+
+
+[03/24/2025 08:12] nbody
+hence my point, it then becomes an impact game. I wonder if you can prove H/M through really high impact even if it's a trusted role doing something bad.
+
+
+[03/24/2025 08:13] riceee8969
+From my experience in comp audits till now no matter how bad the impact is if the root cause arises from trusted role acting badly its always info/low
+
+{Reactions}
+👍 
+
+[03/24/2025 08:33] 0xrochimaru
+You know people without SR role can't even escalate right? Is you are planning to submit admin error issue, best of luck then
+
+
+[03/24/2025 08:34] nbody
+low it is then
+
+
+[03/24/2025 08:37] pfapostol
+How high would impact have to be if trusted roles in this protocol are literally allowed to invalidate any participant and take all the rewards.
+
+
+[03/24/2025 08:38] pfapostol
+There is no impact higher than this, and this is normal protocol behavior
+
+
+[03/24/2025 08:39] karthik6783
+please delete this
+
+
+[03/24/2025 08:40] unique0x0
+everyone know that
+
+
+[03/24/2025 08:40] unique0x0
+no need to delete
+
+
+[03/24/2025 08:40] heliosophistxiv
+Yeah you could argue that impact is high (e.g. admin can steal all funds) and with likelihood low it would indeed be medium. Problem is that we're classifying bugs in a discrete manner (L/M/H) but in reality it's more granular. E.g. low likehood could be that any user can exploit something once a month when a timestamp is a specific value - but that happens once a month, while compromising the private key of an admin (or an admin turning malicious) is something much harder to measure as it depends on individual OPSEC etc. If there's a single admin key and the dev team is guarding that as if their life depended on it, then it would happen much less frequently than once a month. From a practical standpoint accepting admin issues would just flood every contest with useless items such as "dev dies, protocol funds stuck forever"
+
+{Reactions}
+😂 
+
+[03/24/2025 08:41] pfapostol
+It is not a valid finding
+
+{Reactions}
+👍 😂 (2) 
+
+[03/24/2025 08:41] heliosophistxiv
+DELET DIS !!! my only finding's gonna have 420 dups
+
+{Reactions}
+😂 (2) 
+
+[03/24/2025 08:41] dulgiq
+literally the campaign admin is included in the `trusted` roles section in the readme idk what u arguing about guys
+
+{Reactions}
+😂 
+
+[03/24/2025 08:43] nbody
+yea i don't know either. Is the SWAP_CALLER role, being the Li.Fi API, considered `trusted` ? probably yes correct?
+
+
+[03/24/2025 08:43] 0xslowbug
+The nudge admin themselves?
+
+They can invalidate but they won’t be able to take the rewards lol
+
+They’d need to cooperate with the campaign admin to do so.
+
+Adding this to my report so it is chosen for report
+
+
+[03/24/2025 08:43] dulgiq
+yes, it is considered trusted
+
+
+[03/24/2025 08:44] nbody
+so any loss of funds linked to something executed by this user is considered low, as per what the other gentlemen here are saying?
+
+
+[03/24/2025 08:45] pfapostol
+Li.fi is used to simplify multicall transactions, you could check the transactions example, provided in README
+
+
+[03/24/2025 08:45] 10ap17
+## All trusted roles in the protocol
+
+We are using role-based access control in the protocol. Below are the roles that can be found, and how they will be assigned initially:
+
+
+| SWAP_CALLER_ROLE | This role is initially given to one of Li.fi’s contracts (called Executor).|
+
+
+[03/24/2025 08:47] nbody
+thanks for clarifying that, I did understand that part thanks to @0xfirefist . My question is more related to what severity to assign to my findings.
+
+
+[03/24/2025 08:48] heliosophistxiv
+tell me what you found and I'll assign a severity
+
+{Reactions}
+😂 (4) 
+
+[03/24/2025 08:48] heliosophistxiv
+(jk)
+
+
+[03/24/2025 08:48] nbody
+😂
+
+
+[03/24/2025 08:48] heliosophistxiv
+it's hard to tell without knowing exactly what happens but most contest platforms have guidelines in their docs
+
+
+[03/24/2025 08:50] nbody
+I was just confused by the statement that, anything originating from a `trusted` role is immediately considered low. Where in this contract, thats essentially everything. Eitherway, I am very curious to see what other people have found. Definitely a fun first contest for me
+
+
+[03/24/2025 08:51] heliosophistxiv
+overall I evalute these:
+- likelihood: who can execute/initiate the attack? what prerequisites are there? e.g. anyone can attack without any prereq: high, anyone can execute attack but only when X and Y happens before (and they are realistic): medium
+- impact: mostly DoS or loss of funds: does the protocol lose fees, locked funds, etc? is it only a few %? do users lose money? if a single user loses complete deposit that's high imo, or many users lose a few %
+
+
+[03/24/2025 08:52] pfapostol
+not anything, only mistakes and abuses, if you found a logical error or a broken invariant in the admin function it will be a valid finding
+
+
+[03/24/2025 08:52] heliosophistxiv
+try to imagine you're the dev team and assess the headache you feel when your attack happens
+
+{Reactions}
+😂 
+
+[03/24/2025 08:53] nbody
+I seeee! okay gotcha
+
+
+[03/24/2025 08:53] nbody
+thanks guys
+
+
+[03/24/2025 08:53] nbody
+hahah that was good
+
+
+[03/24/2025 08:54] nbody
+by that logic we are in business:wall:
+
+
+[03/24/2025 09:11] mrfalsegenius
+The real question is, where is `SensoYard`?
+
+{Reactions}
+😂 
+
+[03/24/2025 09:55] lubakmanqk
+you cant have vulnerabilities if all methods require auth and actors are trusted
+
+{Reactions}
+😂 (2) 
+
+[03/24/2025 09:55] lubakmanqk
+security 101
+
+{Reactions}
+🤣 (2) 😂 
+
+[03/24/2025 10:03] welith
+you can, aka logical and business vulnerabilites
+
+
+[03/24/2025 10:03] nbody
+I think he was being sarcastic
+
+{Reactions}
+👍 
+
+[03/24/2025 10:16] lubakmanqk
+Invalid, wrong assumption
+
+{Reactions}
+🤣 (4) 😂 (6) 
+
+[03/24/2025 10:26] mrfalsegenius
+You must've experienced Sherlock's CJs
+
+{Reactions}
+😂 (8) 
+
+[03/24/2025 11:07] mhu_kalii
+Too accurate
+
+{Reactions}
+💯 
+
+[03/24/2025 11:08] raphaelroullet
+Haha he's off for a few days but will be back soon! I'm here to answer any questions you may have. Only a few hours left!
+
+{Reactions}
+❤️ (3) 
+
+[03/24/2025 11:37] mylifechangefast.eth_70767
+SECUREUM
+
+
+[03/24/2025 11:41] derastephh
+Damn i missed the arguments
+
+
+[03/24/2025 12:35] welith
+just created a thread with some question, would love some feedback 🙂
+
+{Reactions}
+👀 
+
+[03/24/2025 13:01] werulez99
+The system wants me to find bugs
+
+
+[03/24/2025 13:02] werulez99
+https://tenor.com/view/solo-leveling-statue-of-god-gif-14621948488655819220
+
+{Embed}
+https://tenor.com/view/solo-leveling-statue-of-god-gif-14621948488655819220
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/solo-leveling-statue-of-god-BBA4B.png
+
+
+[03/24/2025 13:11] mrfalsegenius
+https://tenor.com/view/loufy42-light-yagami-death-note-gif-15248803
+
+{Embed}
+https://tenor.com/view/loufy42-light-yagami-death-note-gif-15248803
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/loufy42-light-09D56.png
+
+
+[03/24/2025 13:13] pro_king1
+https://tenor.com/view/samurai-champloo-katana-sword-preparing-gif-10886489
+
+{Embed}
+https://tenor.com/view/samurai-champloo-katana-sword-preparing-gif-10886489
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/samurai-champloo-180F1.png
+
+
+[03/24/2025 13:40] dot_cloud
+https://tenor.com/view/spinning-cat-ethel-cat-ethel-oiiaio-oiiaioiiiai-gif-11447083680189840632
+
+{Embed}
+https://tenor.com/view/spinning-cat-ethel-cat-ethel-oiiaio-oiiaioiiiai-gif-11447083680189840632
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/spinning-cat-ethel-cat-FA840.png
+
+
+[03/24/2025 16:03] mike_bello90
+and low are not payed in this contest 😕
+
+
+[03/24/2025 16:04] damola0x
+They're not?!!!
+
+
+[03/24/2025 16:05] pfapostol
+Only HM in this contest:
+
+Total Prize Pool: $20,000 in USDC
+HM awards: up to $17,000 USDC
+If no valid Highs or Mediums are found, the HM pool is $0
+Judge awards: $1,500 in USDC
+Validator awards: $1,000 USDC
+Scout awards: $500 in USDC
+
+
+[03/24/2025 16:06] damola0x
+https://tenor.com/view/dumbledore-frustrated-harry-potter-i-give-up-give-gif-4407991
+
+{Embed}
+https://tenor.com/view/dumbledore-frustrated-harry-potter-i-give-up-give-gif-4407991
+i give up.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/dumbledore-frustrated-B3470.png
+
+
+[03/24/2025 16:11] mike_bello90
+it's the worst thing ever, people that didn't find bugs, judging reports of people that actually found bugs lol 😂
+
+{Reactions}
+😂 (3) 
+
+[03/24/2025 16:16] emerald7017
+:ohno: Butcher house
+
+{Reactions}
+😅 (2) 
+
+[03/24/2025 18:24] 0xrochimaru
+curious to see how many submissions there will be. Should be <300 I feel
+
+
+[03/24/2025 18:24] welith
+It's never that low 😄 AI-generated bullshit will amp those nubmers > 500 IMO
+
+
+[03/24/2025 18:26] 0xrochimaru
+Maybe people will be more mindful as their signals are on line here.
+
+{Reactions}
+❤️ 
+
+[03/24/2025 18:26] 10ap17
+good one 🙂
+
+
+[03/24/2025 18:27] welith
+Claude are you sure this is valid, as my signal is on the line? 
+
+Let me check again, yes it does appear that if the admin multisig is compromised the protocol could suffer losses.
+
+Great!
+
+{Reactions}
+😂 (5) 
+
+[03/24/2025 18:31] francise._
+I'd be surprised honestly
+
+
+[03/24/2025 18:32] welith
+Also the reports should be lower as QA is not rewarded
+
+
+[03/24/2025 18:35] deeney3866
+Let me have the whole HM pot.
+
+{Reactions}
+😂 
+
+[03/24/2025 18:41] artur9905
+Yeah but more people will submit lows as meds 🙄
+
+
+[03/24/2025 18:42] welith
+For sure, especially on protocols with so much trusted actions. That's why I don't think we will have <300 subs
+
+{Reactions}
+👍 
+
+[03/24/2025 18:50] francise._
+You'd definitely still see some QA
+
+
+[03/24/2025 18:51] heliosophistxiv
+I"M SO EXCITED!! my first contest on C4
+
+{Reactions}
+🔥 
+
+[03/24/2025 18:51] francise._
+Just to be sure, its an hour 10 minutes to go yeah?
+
+{Reactions}
+👍 (2) 
+
+[03/24/2025 19:25] luc1jan
+Same, taking all HM pot to myself 😄
+
+
+[03/24/2025 19:32] aarif02
+I know someone who knows someone that met someone who knows someonethat found 1H 1M 😎
+
+{Reactions}
+4739_Skeletor 
+
+[03/24/2025 19:33] luc1jan
+Invalid
+
+
+[03/24/2025 19:33] aarif02
+Chief judge 👨‍⚖️
+
+
+[03/24/2025 19:40] francise._
+We're all acting like we didn't find something 👀
+
+
+[03/24/2025 19:41] sabanaku77
+https://tenor.com/view/hamstermert-gif-4959950239614197565
+
+{Embed}
+https://tenor.com/view/hamstermert-gif-4959950239614197565
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/hamstermert-9A6B1.png
+
+{Reactions}
+😂 
+
+[03/24/2025 19:41] dluigi
+My first C4 contest that I submitted a report. Found 1 M, I think.
+
+{Reactions}
+neuroHypers 
+
+[03/24/2025 19:43] francise._
+It seems this medium might be highly duped😂
+
+
+[03/24/2025 19:43] illoy_sci
+:_3_:
+
+
+[03/24/2025 19:43] illoy_sci
+honestly that's somewhat expected at this point
+
+
+[03/24/2025 19:43] illoy_sci
+look at the last Thorwallet contest ww
+
+
+[03/24/2025 19:44] illoy_sci
+Though, it's always fun to see someone finds a medium solo and that gets them to the top of the leaderboard, above those with like 3 highs
+
+
+[03/24/2025 19:45] luc1jan
+Is it possible to see how many submission were made?
+
+
+[03/24/2025 19:45] pfapostol
+Not yet, 15 minutes till the end
+
+
+[03/24/2025 19:58] mike_bello90
+ooo i'm not gonna have time to finish my last report 😮
+
+{Reactions}
+neuroPat2 (2) 
+
+[03/24/2025 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺Wardens The **Nudge.xyz** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks.
+
+{Reactions}
+✅ (3) 
+
+[03/24/2025 20:02] pfapostol
+1000
+
+
+[03/24/2025 20:02] heliosophistxiv
+hmm.. we can't see submissions?
+
+
+[03/24/2025 20:03] 0xrochimaru
+fr?
+
+
+[03/24/2025 20:03] pfapostol
+fr
+
+{Reactions}
+💀 (3) 
+
+[03/24/2025 20:03] 10ap17
+what did you submitted tho?
+
+
+[03/24/2025 20:04] heliosophistxiv
+400 will be no impact reentrancy and other 500 is CREATE2 collision
+
+
+[03/24/2025 20:04] l9baldur
+Where is the repo where I can see the submissions if I have SR role ?
+
+
+[03/24/2025 20:04] 10ap17
+you think the create2 is only valid one?(if its even valid)
+
+
+[03/24/2025 20:05] heliosophistxiv
+nah it's probably invalid or info
+
+
+[03/24/2025 20:05] pfapostol
+Contest page top-right
+
+
+[03/24/2025 20:05] pfapostol
+Dashboard
+
+
+[03/24/2025 20:05] l9baldur
+ok got i t thanks
+
+
+[03/24/2025 20:05] 10ap17
+yeah i think its low/info
+
+
+[03/24/2025 20:05] heliosophistxiv
+I don't get it, if this was my 1st contest I can't see the submissions?
+
+
+[03/24/2025 20:06] luc1jan
+same hha
+
+
+[03/24/2025 20:06] 10ap17
+nah, you dont have role
+
+
+[03/24/2025 20:06] bro_are_u_ok
+how to get a SR role?
+
+
+[03/24/2025 20:06] pfapostol
+Need to get SR role
+
+
+[03/24/2025 20:06] bro_are_u_ok
+my friends
+
+
+[03/24/2025 20:06] pfapostol
+Check the docs
+
+{Reactions}
+❤️ (2) 
+
+[03/24/2025 20:06] 10ap17
+you have it in docs
+
+{Reactions}
+❤️ 
+
+[03/24/2025 20:06] bro_are_u_ok
+thanks
+
+
+[03/24/2025 20:08] mike_bello90
+I make my case to have it too lol 😂
+
+
+[03/24/2025 20:09] mike_bello90
+hey I leave C4 for some time I just noticed that I lost my SR role 🤔
+
+
+[03/24/2025 20:12] pfapostol
+Okay, after a quick look, there is a chance that there will be a real HM in this contest. But with 1000+ reports, we will have to wait for the judging for quite a while.
+
+{Reactions}
+🤨 (2) 😭 (2) 
+
+[03/24/2025 20:13] 10ap17
+which one tho
+
+
+[03/24/2025 20:13] heliosophistxiv
+how tf did people submit 1000 issues tho
+
+
+[03/24/2025 20:13] l9baldur
+Mine B)
+
+{Reactions}
+🫡 🔥 (2) 
+
+[03/24/2025 20:13] pfapostol
+"illegal" to disclose
+
+
+[03/24/2025 20:13] 0xrochimaru
+How many do you think. Just 1 or more than 1 valids
+
+
+[03/24/2025 20:13] 10ap17
+:((((
+
+
+[03/24/2025 20:15] luc1jan
+off to silo finance
+
+
+[03/24/2025 20:19] 0xbnke
+How can I access the submissions
+
+
+[03/24/2025 20:20] illoy_sci
+:_29_: I suppose there are just lots of participants...
+
+
+[03/24/2025 20:20] heliosophistxiv
+https://docs.code4rena.com/roles/certified-contributors/sr-backstage-wardens
+
+{Embed}
+https://docs.code4rena.com/roles/certified-contributors/sr-backstage-wardens
+Security Researcher role (formerly +backstage wardens) | Code4rena
+
+
+[03/24/2025 20:22] luc1jan
+Nice pfp
+
+{Reactions}
+❤️ 
+
+[03/24/2025 20:23] 10ap17
+lol if you know who it is, you know its bad  pic:)
+
+{Reactions}
+🤣 
+
+[03/24/2025 20:24] 0xbnke
+I just noticed that I lost SR role 🥹
+
+
+[03/24/2025 20:25] luc1jan
+How you lose it, inactivity?
+
+
+[03/24/2025 20:25] luc1jan
+Or invalid submissions
+
+
+[03/24/2025 20:27] mike_bello90
+mee too, i didn't know it can be lose
+
+
+[03/24/2025 20:28] pfapostol
+378
+
+{Reactions}
+FOCUS 
+
+[03/24/2025 20:28] mike_bello90
+It was months since the las time I compete in C4, didn't know about signal either lol
+
+
+[03/24/2025 20:30] pfapostol
+check the criteria in the docs links above, you may no longer meet some of them.
+
+{Reactions}
+👍🏻 
+
+[03/24/2025 20:30] 0xrochimaru
+Average of 2.5 submissions per person. I wonder how people found this many to submit.
+
+
+[03/24/2025 20:31] 0xrochimaru
+Very curious to see what all issue where actually there
+
+{Reactions}
+✅ (3) 
+
+[03/24/2025 20:31] luc1jan
+Need to get to backstage
+
+
+[03/24/2025 20:31] 0xrochimaru
+It'll probably take a month though as submissions are this many
+
+
+[03/24/2025 20:35] 0xspryon
+is it exactly 1k submissions?
+if no, care to share the exact number?
+
+
+[03/24/2025 20:37] tusharr1411
+nah...liquid ron had 1250+ submissions and  took just 3 weeks... which pretty fast for C4 standards
+
+
+[03/24/2025 20:38] deeney3866
+How many submissions ?
+
+
+[03/24/2025 20:54] welith
+1000
+
+
+[03/24/2025 20:58] 0xspryon
+exactly 1000?
+
+
+[03/24/2025 20:59] welith
+i forgot if it was a bit more like 1008 or something like that
+
+
+[03/24/2025 21:01] 0xspryon
+ok, got.
+Was just surprised the count landed at exactly 1k submissions.
+That would have been a very unexpected count.
+
+
+[03/24/2025 21:01] heliosophistxiv
+it is not any less unexpected than 1008
+
+
+[03/24/2025 21:06] 0xspryon
+yeah, you're right though.
+
+
+[03/24/2025 21:11] dot_cloud
+I submit only one 🫡
+
+
+[03/24/2025 21:20] francise._
+You didn't find anything?
+
+
+[03/24/2025 21:23] 0xrochimaru
+Just 1. Found a couple of lows too. Maybe people found paths to convert those lows to med or high.
+
+{Reactions}
+❤️ 
+
+[03/24/2025 21:43] heliosophistxiv
+converting low to M/H is not possible on C4 I think
+
+
+[03/24/2025 22:01] benterkiii
+it was only M/H contest?
+Lows arent eligible for awards, aren't they ??
+
+
+[03/24/2025 22:12] 0xbyteknight
+I think only H/M and some best QA/Gas reports
+
+
+[03/24/2025 22:13] benterkiii
+but there is no QA rewards in the contest page
+
+
+[03/24/2025 22:16] francise._
+Yup
+
+
+[03/24/2025 23:15] werulez99
+I just noticed that my High is actually a Critical
+
+
+[03/24/2025 23:18] thehxnz
+interesting
+
+
+[03/25/2025 01:03] illoy_sci
+yeh I'm expecting the report to look something like this again at this point
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/Screenshot_2025-03-24_at_18.03.02-197C2.png
+
+{Reactions}
+😮 (2) 🤣 (11) goose (3) 
+
+[03/25/2025 02:57] elminnyc99
+Where we can read all the submissions ? Or just a judge can do it?
+
+
+[03/25/2025 04:19] thehxnz
+only judge and people with the SR role
+
+
+[03/25/2025 04:21] elminnyc99
+Thanks.
+
+
+[03/25/2025 04:45] benterkiii
+I think he meant that sometimes you think that the bug you found is a Low, but other users Sees a way to break/harm the protocol through it making it a High or Med
+
+
+[03/25/2025 05:25] francise._
+Yeah if it's submitted as a low it can't be upgraded to H/M 
+It's written on the contest page, almost every
+
+
+[03/25/2025 05:27] pfapostol
+Yes, this doesn't look like a problem in this contest, since many people simply submitted the low/non-critical issues as high, even skipping the medium severity.
+
+
+[03/25/2025 05:35] francise._
+Tough
+
+
+[03/25/2025 06:31] mylifechangefast.eth_70767
+- 10 cent
+
+
+[03/25/2025 07:02] w33ked_
+@thebrittfactor | C4 , I thought c4 was to implement the feature to allow all participants to see report progress on yesterday's system update. What happened to that?
+
+
+[03/25/2025 07:05] welith
+The update did not mention anything about non-SRs viewing issues.
+
+
+[03/25/2025 07:09] 4mj3x
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/IMG_1403-9DD8B.png
+
+{Reactions}
+😂 (6) 
+
+[03/25/2025 08:11] tough111
+?
+
+{Reactions}
+😂 (5) 
+
+[03/25/2025 08:17] 0xtheanzrider
+Huh?
+
+
+[03/25/2025 08:19] pro_king1
+Is there any valid finding till now?
+
+{Reactions}
+😂 (2) 
+
+[03/25/2025 11:59] daveylupes
+Lol patience guys, lets move to the next contest
+
+{Reactions}
+💯 (2) 
+
+[03/25/2025 12:06] daveylupes
+But honestly, this is my first submission ever in the web3. Been in web2. So I am kinda impatient
+
+{Reactions}
+❤️ (3) 👍 
+
+[03/25/2025 14:54] raphaelroullet
+A big thank you to all of you who participated in the competition and for all the submissions. It’s been very valuable already to have so many eyes reviewing our docs and smart contracts. 
+Thank you for helping us make Nudge secure! 🙏 🙏
+
+{Reactions}
+💜 (53) hi5 (26) 👑 
+
+[03/25/2025 22:12] elvisvan
+what product category does nudgexyz fall into? liquidity staking? lending & borrowing? yield farming? asset management?
+
+
+[03/25/2025 22:18] thehxnz
+probably Farm (not yield farming, just Farm; ie Protocols that allow users to lock money in exchange for a protocol token)
+
+{Reactions}
+👍🏻 
+
+[03/26/2025 06:12] pabel0914
+Do you think there is any valid issue?
+
+
+[03/26/2025 11:15] _givn
+Thanks for answering all our questions @Raph, @SensoYard  👍 
+It was a good contest to be in
+
+{Reactions}
+🤝 (6) 
+
+[03/26/2025 11:45] werulez99
+for sure there are 😉
+
+
+[03/26/2025 12:01] werulez99
+it was a solid codebase tho i liked it
+
+
+[03/26/2025 12:22] daveylupes
+I see the status is `sponsor review`
+
+
+[03/26/2025 12:27] pfapostol
+Which is weird, because it looks like the validation isn't finished. Maybe it's a bug after the last update, or maybe the judging will go very quickly in this contest.
+
+
+[03/26/2025 12:28] daveylupes
+Yea, what was the last update before the current one?
+
+
+[03/26/2025 12:29] pfapostol
+By the update i mean this https://discord.com/channels/810916927919620096/810929015509483554/1353669753084055615
+
+
+[03/26/2025 12:30] daveylupes
+Ah, gotcha
+
+
+[03/26/2025 15:31] cd_pandora
+judging ended?
+
+{Reactions}
+😂 (9) facepalm (2) 
+
+[03/26/2025 15:31] cd_pandora
+https://tenor.com/view/surprised-pikachu-pokemon-shock-surprised-pikachu-gif-15357817
+
+{Embed}
+https://tenor.com/view/surprised-pikachu-pokemon-shock-surprised-pikachu-gif-15357817
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/surprised-pikachu-AB3DC.png
+
+{Reactions}
+😂 
+
+[03/27/2025 06:07] 0xslowbug
+What’s the normal timeline for contest on code4
+
+Contest
+Judging 
+Sponsor review
+….???
+
+
+[03/27/2025 06:08] pfapostol
+https://docs.code4rena.com/other-details/our-process
+
+{Embed}
+https://docs.code4rena.com/other-details/our-process
+Audit timeline | Code4rena
+This is a high level overview of the C4 audit timeline.
+
+{Reactions}
+👍 (4) 
+
+[03/27/2025 08:08] daveylupes
+I have been looking for this, thanks!
+
+
+[03/27/2025 09:22] 0xsorrynotsorry
+Contest
+Validation
+Sponsor Review
+Judging
+PJQA
+Final verdicts
+💰
+
+{Reactions}
+👍 (5) 💯 (3) 
+
+[03/27/2025 14:36] heliosophistxiv
+from which phase are "results" (even like preliminary results) available to all roles?
+
+
+[03/27/2025 14:38] pfapostol
+after Report is published
+
+{Reactions}
+🙏 
+
+[03/27/2025 20:26] knight18695
+has there been any validated issue
+
+
+[03/28/2025 07:24] luc1jan
+ofc there will be
+
+
+[03/28/2025 11:32] opec252918
+Is there any appeal period here on code4rena?
+
+
+[03/28/2025 12:33] mrmorningstar96
+PJQA period is when you can appeal
+
+
+[03/28/2025 13:36] 0xsorrynotsorry
+only for the wardens with SR role I think?
+
+{Reactions}
+💯 (5) 
+
+[03/28/2025 16:47] cd_pandora
+Judging completed?
+
+
+[03/28/2025 17:25] pfapostol
+Judging has not yet started, it is a validation currently.
+
+
+[03/28/2025 23:33] benterkiii
+the sponsors are the ones who validates submissions??
+
+
+[03/29/2025 04:53] pfapostol
+No
+
+
+[03/29/2025 13:15] benterkiii
+i see that the status is "Sponsor review"
+
+
+[03/29/2025 13:44] pfapostol
+because the sponsor started reviewing as soon as possible, before the validation was completed.
+
+{Reactions}
+👆 ➕ (2) 👌 (2) 🟰 (2) 4️⃣ 
+
+[03/31/2025 14:50] daveylupes
+Mmmm. I see the comments on my submissions now. great
+
+{Reactions}
+🎉 
+
+[03/31/2025 15:04] luc1jan
+how do you see coment on submission
+
+
+[03/31/2025 15:05] pfapostol
+It should be open for everyone now.
+
+
+[03/31/2025 15:06] luc1jan
+yeah i see submissions, but not comments
+
+
+[03/31/2025 15:06] luc1jan
+is triage the part where sponsor reviews
+
+
+[03/31/2025 15:07] pfapostol
+Triage - validators
+Review - sponsors
+Judge - Judge
+
+
+[03/31/2025 15:07] luc1jan
+Oh thanks and who is validator
+
+
+[03/31/2025 15:08] luc1jan
+First time here
+
+
+[03/31/2025 15:08] pfapostol
+people who pre-sort findings
+
+{Reactions}
+🙏 
+
+[03/31/2025 15:10] daveylupes
+Also, this was my first time submitting. My few findings says insufficient. Does it mean it is not valid to be paid?
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-9389C.png
+
+
+[03/31/2025 15:11] pfapostol
+https://docs.code4rena.com/roles/certified-contributors/validators#validation-round-for-rsvpd-validators-first-48-hours
+
+{Reactions}
+🔥 👍 
+
+[03/31/2025 15:30] cloudellie
+Triage = evaluation by the validator, so this means that the validator believed your submissions were of insufficient quality, or contained insufficient evidence of validity.
+
+
+[03/31/2025 15:38] daniel526
+@CloudEllie what happens in this scenario?
+the issue i discussed with the sponsers and they mentioned "This is by design, the balance of the swap caller (lifi's contract) is entirely for the user and the result of whatever swap was performed" hence i didn't submit the finding but i am seeing a finding related to this marked "sufficient"
+
+
+[03/31/2025 15:40] daniel526
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-A9A5B.png
+
+
+[03/31/2025 15:41] luc1jan
+I believe this is lesson learned for you
+
+
+[03/31/2025 15:43] luc1jan
+In case its valid but insufficient, will sponsor and judges take a look or no? One of my issues has this case, i believe its seriously misvalidated.
+
+
+[03/31/2025 15:43] cloudellie
+this is just the validator's assessment, not the final judgment. I would advise waiting to see what happens during the sponsor review and judging phase.
+
+{Reactions}
+✅ (3) 
+
+[03/31/2025 15:44] luc1jan
+Aha ok thanks
+
+
+[03/31/2025 15:44] cloudellie
+judges review everything unless it's marked as spam
+
+{Reactions}
+✅ (4) 
+
+[03/31/2025 15:58] undefined_joe
+@CloudEllie my submission was marked insufficient, but there are duplicates by the sidebar, all marked as sufficient. Stating the same issue and impact.
+
+
+[03/31/2025 16:17] itsmetechjay
+https://discord.com/channels/810916927919620096/1347260216093311006/1356292920071950377
+
+
+[03/31/2025 16:40] sabanaku77
+@Jay | C4 I suppose then there will also be a escalation phase after judging??
+
+
+[03/31/2025 16:42] thebrittfactor
+PJ QA will be opened after initial judgements are made. However, it's only available for [SR wardens](https://docs.code4rena.com/roles/certified-contributors/sr-backstage-wardens).
+
+
+[03/31/2025 16:43] sabanaku77
+Can a SR warden escalate others issues too?
+
+
+[03/31/2025 16:44] cloudellie
+https://docs.code4rena.com/roles/wardens/submission-guidelines#good-citizenship-is-a-requirement-for-compensation
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-BDCA0.png
+
+{Embed}
+https://docs.code4rena.com/roles/wardens/submission-guidelines
+Submission guidelines | Code4rena
+
+{Reactions}
+thankyou (3) 
+
+[03/31/2025 17:52] c_moose
+Love the fact that we can now see all submissions, but it's still a bummer that we can't escalate issues without an SR role. 
+I can see a validator's comment on one of my issues but I'm afraid the validator has read the issue incorrectly.
+
+
+[03/31/2025 17:54] sabanaku77
++1
+
+
+[03/31/2025 19:16] cd_pandora
+Same here
+
+
+[03/31/2025 20:43] fils7
+I've submitted several issues for some protocols and now that they ended submitions, I cannot see the PoC I've wrote for each one, is this normal?
+
+
+[03/31/2025 20:43] 0xspryon
+@CloudEllie , I'd like to understand the rationale behind this decision.
+Where is it most appropriate to ask questions pertaining to this?
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-7E0A3.png
+
+
+[03/31/2025 21:33] benterkiii
+These kind of questions should be in the question channel, 
+Keep this channel discussions related to nudge.
+Here is the question channel:
+https://discord.com/channels/810916927919620096/810931711609143326
+
+{Reactions}
+👍 
+
+[04/01/2025 07:30] donjay3388
+My  submission was valid but also marked as insufficient what does it mean?
+
+
+[04/01/2025 07:41] mrfalsegenius
+It means you haven't read the following,
+https://docs.code4rena.com/roles/certified-contributors/validators#validation-round-for-rsvpd-validators-first-48-hours
+
+{Embed}
+https://docs.code4rena.com/roles/certified-contributors/validators
+Validators | Code4rena
+
+
+[04/01/2025 07:44] donjay3388
+Okay, thanks.
+
+{Reactions}
+👍 
+
+[04/01/2025 10:42] darvex2077
+Hi , pls having a crossed sufficient on my finding, does that mean it is insufficient ?
+
+
+[04/01/2025 11:17] mrfalsegenius
+In coding terms, it's like this,
+```
+if (!sufficient) {
+   discardReport()
+}
+```
+
+
+[04/01/2025 11:17] mrfalsegenius
+Check the comment from validator
+
+
+[04/01/2025 11:17] mrfalsegenius
+They must've provided a comment on why that tag was assigned to it
+
+
+[04/01/2025 11:21] mrfalsegenius
+If your finding is marked `sufficient`, it goes into something called `findingsRepo`. 
+
+From the docs:
+`The judge reviews all submissions in the findings repo.`
+
+
+[04/01/2025 11:26] darvex2077
+in this case it is marked invalid and  sufficient but then it is crossed  
+yes there is a comment below... i just want to know it will still be pushed to the findings repo, since the sufficient tag was crossed..
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/Screenshot_181-2EB7A.png
+
+
+[04/01/2025 11:28] mrfalsegenius
+If the sufficient tag is crossed, it's not sufficient. That means, it's `insufficient`
+
+
+[04/01/2025 11:30] mrfalsegenius
+invalid + ~~sufficient~~ = `insufficient`
+
+
+[04/01/2025 11:34] cd_pandora
+Im guessing validator said “Role  is trusted”
+
+
+[04/01/2025 11:44] darvex2077
+yeah.. 
+ but i think  the validator surly got this wrong this time....
+as the function is public and can be called by anyone , not just " users with role"
+
+
+[04/01/2025 11:46] cd_pandora
+When a campaign is deployed, a role will be assigned to the creator “Campaign_Admin” which is under trusted roles
+
+
+[04/01/2025 11:52] darvex2077
+yes but the point of my submission was on rewardPPQ as  "deploy campaign " is callable by anyone and lacks a zero check on rewardPPQ...  
+ but the Validator probly feels it  "deploy campaign"  is only callable by some admin
+
+
+[04/01/2025 11:56] mrfalsegenius
+"Since campaign deployment is permissionless, we can't fully trust any campaign deployed. For that reason we'll have a whitelist on Nudge.xyz and display appropriate warnings to users for campaigns we haven't vetted. ~ `Raph`"
+
+
+[04/01/2025 11:59] mrfalsegenius
+Campaign info will probably be displayed on Nudge.xyz even if someone directly interacts with protocol and creates a campaign. Maybe that's why your report was invalidated
+
+
+[04/01/2025 12:02] darvex2077
+if targetToken and rewards Token are really being checked , then that "rewardPPQ"   also should.. cos  i think is causes a real treat to the protocol
+Protocol should be doing every thing possible to ensure the have less threath to their functionality
+
+
+[04/01/2025 12:16] mrfalsegenius
+Yes, something like that, but a campaign is all about reallocating to the target asset for incentives which means it's only natural that users would want to check how much they're getting for letting go of their tokens for a tokenX. So naturally, they would look into `rewardPPQ`.
+
+
+[04/01/2025 12:27] luc1jan
+PPQ is visible on UI so it makes no threat to protocol, users simply won’t deposit to 0 PPQ
+
+
+[04/01/2025 15:34] petg23
+if i have triage -> sufficient and review disputed will I be able to give more proof later in the contest?
+
+
+[04/01/2025 15:35] petg23
+validator comments are not correct
+
+{Reactions}
+👍 
+
+[04/01/2025 17:21] deeney3866
+If you don't have SR role can't participate in PJQA.
+
+
+[04/01/2025 22:48] saaitaamaa
+what does insuffiecient proof means when I submitted a Fully functional POC ??
+
+
+[04/01/2025 23:38] saaitaamaa
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-EFA17.png
+
+
+[04/02/2025 00:55] mauro2857
+wrote 150 lines of POC and he also said this
+
+
+[04/02/2025 01:41] saaitaamaa
+good written, well commented, showcasing direct impact of the bug 🙂
+
+
+[04/02/2025 03:06] 4mj3x
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/F-1
+i wonder what you guys think about this issue
+
+{Embed}
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/F-1
+F-1 evaluate finding | Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/c4-og-v2-64B78.png
+
+
+[04/02/2025 03:08] 4mj3x
+i don't think the original report showcases the full impact and that's why the sponsor disputed it, it's about tricking the campaign into rewarding the user multiple times for the same reallocation
+
+
+[04/02/2025 07:16] tusharr1411
+Don't you think he still needs to hold that much amount to be able to claim the reward...? Participation struct for user participation store the `amountReceived` from the  lifi Executor , not the swap amount `toAmount` . And same for the `NewParticipation` event emission, it is emitted with `amountReceived` as toAmount. So doesn't matter how much he originally swapped he still need to hold  `amountReceived` amount of targetToken to be able to claim rewards.If he moves the funds, he will be invalidated, and his locked reward will be made available in the pool for further participants
+
+
+[04/02/2025 07:31] 4mj3x
+the attack i thought of is to inflate the reward as follows:
+```
+- Attacker got 200 eth and 0 stEth, he swaps 100 eth to 100 stEth.
+- Now he has 100 stEth, and 100 eth.
+- The next 100 eth, he doesn't swap it directly, he swaps it one eth by one eth and each time he performs this attack :
+    1 - Attacker swaps just 1 eth, and sends the 100 stEth directly (which gets transferred back in the same transaction), so he got the reward for swapping 101 eth by just swapping one and keeping the rest 99.
+    2 - Attacker sends 1 eth again, the attacker gets the reward for 101 eth, but he still got 98.... and so on
+```
+so basically he can get the reward for swapping without actually swapping
+
+
+[04/02/2025 07:33] 4mj3x
+that's the issue, the `amountReceived` is calculated based on `balanceOf(msg.sender)`, so if you send tokens which you gained from a previous participation to the swap caller, you will inflate the balance and therefore inflate the reward, which basically means you tricked the campaign into rewarding you two times for that first reallocation
+
+
+[04/02/2025 07:34] 4mj3x
+( the tokens you transferred will be transferred back immediately )
+
+
+[04/02/2025 07:40] 4mj3x
+check this for more details https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-349
+
+{Embed}
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-349
+S-349 evaluate submission | Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/c4-og-v2-64B78.png
+
+
+[04/02/2025 07:43] tusharr1411
+after the first iteration of attack he need to hold 101 stETH to be able to claim the reward for that 101stETH. Because when he swapped 1 ETH to 1stETH and send another 100stETH to lifi swap executor contract directly ,campaign contract does not change the state of campaign contract based on `toAmount` which is 1stETH, but is getting changed based on the `amountReceived` (101stETH). 
+Nudge backend will keep track of user participation based on Participation struct or NewParticipation event emission. And both these are using `amountReceived` as to Amount. So he need to hold `amountReceived` (101stETH) to be able to claim reward.
+
+
+[04/02/2025 07:43] tusharr1411
+correct me if I'm wrong...
+
+
+[04/02/2025 07:47] 4mj3x
+no the contract will see it as 101 stEth, and that's what the user will be holding because the tokens will be transferred immediately back to him in line 206, so the invalidation condition aren't met.
+
+
+[04/02/2025 07:50] 4mj3x
+the arg `toAmount` is just used to check slippage in line 202, so the fact that he only swapped 1 ETH ( toAmount ) will not affect anything, and he'll still get the reward as if he swapped 101 eth
+
+
+[04/02/2025 07:51] tusharr1411
+Then how much he need to hold ?
+
+
+[04/02/2025 08:08] mrfalsegenius
+@tusharr1411 
+
+Here's the crux of it.
+1. Campaign pulls entire balance from Executor.
+2. Campaign calculates rewards based on this balance.
+3. Campaign sends it or rather returns it back to user if they donated it to executor.
+
+Let's say I hold 5 target tokens and swap 1 token. All I need to do to get the juicy rewards is donate 5 targetTokens to executor and swap one under the same transaction. Then, I'll get rewards based on 6 target tokens even though I only swapped one.
+
+At the end of the day, I get my tokens back and I am eligible for rewards.
+
+It's a good one!
+
+
+[04/02/2025 08:09] tusharr1411
+the thing is then you need to hold 6 tokens to be able to claim that juicy rewards
+
+
+[04/02/2025 08:10] mrfalsegenius
+Yes, once you hold 6, it starts!
+
+
+[04/02/2025 08:10] mrfalsegenius
+but...
+
+
+[04/02/2025 08:10] mrfalsegenius
+hold up
+
+
+[04/02/2025 08:10] 0xspryon
+@FalseGenius , I've got a quick question.
+Under what conditions do we expect the nudge operator to call the `invalidateParticipations` method?
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-6B6C1.png
+
+
+[04/02/2025 08:11] mrfalsegenius
+@0xspryon  When they're going for garbage activity like this
+
+
+[04/02/2025 08:12] mrfalsegenius
+Then they'd get blacklisted lol
+
+
+[04/02/2025 08:12] 0xspryon
+Except if I missed it, there isn't a blacklist functionality in the app but I get your point.
+
+
+[04/02/2025 08:13] 0xspryon
+So, does the `invalidateParticipations` method mitigate the risk brought about by this issue?
+
+
+[04/02/2025 08:16] mrfalsegenius
+It's more like, if the team is aware of this issue, they could invalidate attacker. If they aren't aware, then attacker could do whatever they want.
+The risk stays. The real question is this,
+`Under what conditions does the protocol invalidate/penalize a user? The protocol didn't exactly state that.`
+
+Is the `invalidateParticipations` in place to handle scenarios like the one we're discussing?
+
+
+[04/02/2025 08:17] 0xspryon
+Re: Is the invalidateParticipations in place to handle scenarios like the one we're discussing? 
+
+My logic tells me yes. Which also means that, the protocol is well aware of the issue.
+
+
+[04/02/2025 08:17] mrfalsegenius
+The sponsor is prolly going for this kind of dispute
+
+
+[04/02/2025 08:18] tusharr1411
+yes I guess.
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-CAEC0.png
+
+
+[04/02/2025 08:18] mrfalsegenius
+The sponsor could just say, "Hey, we have that invalidate participation function in place for such activities since we actively monitor what's happening outside the protocol" and that would invalidate the issue
+
+
+[04/02/2025 08:19] mrfalsegenius
+The auditor could say, "Hey, you just learned about it."
+
+
+[04/02/2025 08:19] mrfalsegenius
+like what was happening with crestal-network in Sherlock lol
+
+
+[04/02/2025 08:20] mrfalsegenius
+100%
+
+
+[04/02/2025 08:20] mrfalsegenius
+But this system is in place ONLY for the holding period
+
+
+[04/02/2025 08:21] mrfalsegenius
+whatever transfers happen after that would be skipped by protocol lol
+
+
+[04/02/2025 08:21] mrfalsegenius
+So there's that
+
+
+[04/02/2025 08:23] mrfalsegenius
+making the vuln....VALID. This is actually outside scope of those nudge system bots actively tracking everything. They're there for duration of holding period. Once the holding period is over, attacker can go all out on the protocol, bypassing everything. The monitoring starts once participation starts. 
+
+This donation attack happens before that!
+
+
+[04/02/2025 08:23] mrfalsegenius
+Wait, I gotta go
+
+
+[04/02/2025 08:23] mrfalsegenius
+peace
+
+
+[04/02/2025 08:27] sulaimon3546
+Invalidating this finding seems off to me because if a participant knows their id they can claim reward directly in the smart contract of the campaign. This is my first contest I don't know if there would be time to dispute and complain about the judgement
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/Screenshot_2025-04-02-09-25-39-105_com.and-1154C.jpg
+
+
+[04/02/2025 08:28] sulaimon3546
+Backend validation only works when someone accesses through the front end it does not work on the smart contract
+
+
+[04/02/2025 08:31] 4mj3x
+Exactly, once the attacker gets their reward for their first participation, the status is now CLAIMED, so they can use those tokens to exploit this vuln and inflate the reward, and the participation wont be invalidated
+
+{Reactions}
+💯 
+
+[04/02/2025 08:31] tusharr1411
+is it in docs or somewhere else ...?
+
+
+[04/02/2025 08:34] sulaimon3546
+I could not find the backend validation in the docs. My issue is that even if there's backend validation nothing stops an attacker from claiming reward of already sold reallocated assets on the smart contract direct since there's no validation  in the contract
+
+
+[04/02/2025 08:35] tusharr1411
+each participation will have different pID. So the next participation doen't depends on the status of  prev. participation of that user.
+
+
+[04/02/2025 08:36] tusharr1411
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-7FDE7.png
+
+
+[04/02/2025 08:37] tusharr1411
+and if he get invalidated then he can not claim reward for that participation.
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-AEDCB.png
+
+
+[04/02/2025 08:37] 4mj3x
+It doesnt have to depend on it, we only need the funds
+
+
+[04/02/2025 08:39] 4mj3x
+What i meant is that he can claim ALL the rewards from all participations
+
+
+[04/02/2025 08:39] 4mj3x
+Without fearing that one might get invalidated
+
+
+[04/02/2025 08:41] sulaimon3546
+While this could work but still someone can still reallocate a single token multiple times and one of them could be missed by the relayer.  The best option would still be having validation on the smart contract that safe guard
+
+
+[04/02/2025 08:42] sulaimon3546
+The best practice is actually putting safety measures in the smart contract directly.
+
+
+[04/02/2025 08:49] sulaimon3546
+Also invalidating a single user with different participation multiple times means gas fee would be wasted
+
+
+[04/02/2025 09:49] julian.avantgarde
+S-552 is casted incorrecty to F-27 istead of F-29 @CloudEllie
+
+
+[04/02/2025 10:18] cloudellie
+It's expected that there may be some errors during the triage phase. Judging has not started for this audit, but once it does, the judge will review all of the submissions and make their own assessment of the duplicate groupings.
+
+
+[04/02/2025 10:43] 0xslowbug
+Okay 
+
+This gives me hope and hopefully there’s no validators bias in it too. Had to refrain from speaking about a finding cos I don’t understand the Good Citizen Rule so I don’t get caught in it. 
+
+Once I get SR status I’m getting a law degree😂
+
+When learning I wasn’t told that the best of auditors are the best at winning arguments.
+
+{Reactions}
+🤣 (4) 
+
+[04/02/2025 14:45] daveylupes
+I think I should also appeal my findings because the sponsors reviews don’t make sense to me. I’ll note down my case facts 😉
+
+
+[04/02/2025 14:51] 0xslowbug
+Only SR can appeal unless you’re one
+
+If I can appeal I would have appealed. 
+
+Oh @CloudEllie help ask the board to consider letting auditors be able to add comment atleast just once before judging starts proper. Only SR can still escalate after judging.
+
+This would greatly help
+
+
+[04/02/2025 15:08] pfapostol
+The amount of spam related to findings discussion in this chat over the last two days, even before judging started, is probably a good argument against PJQA being open to everyone. Most people just don't understand the process, the impact, and the validity. 
+
+And that's not a bad thing, everyone starts somewhere, but if you make a single judge to explain all these misunderstandings, the process will become even longer than it already is.
+
+{Reactions}
+this (7) 
+
+[04/02/2025 15:33] sulaimon3546
+This is true the judge process would take a very long time if everyone were allowed to comment. I would definitely be trying to make cases for my submissions if allowed  😂
+
+
+[04/02/2025 15:34] thebrittfactor
+We appreciate the discussions; however, it's ideal to move these to #❓・questions and keep this channel focused on the Nudge audit. 🙏
+
+{Reactions}
+👍 
+
+[04/02/2025 16:05] c_moose
+Are we allowed to discuss issues here? I thought that was against C4's policy
+
+
+[04/02/2025 16:13] thebrittfactor
+Please hold until the audit report has been published before discussing publicly, [per our docs](https://docs.code4rena.com/roles/wardens/submission-policy#audit-contest-guidelines).
+
+
+[04/02/2025 22:25] benterkiii
+was that a new feature that we can see the judging process (without SR role) ??
+
+
+[04/03/2025 08:19] cloudellie
+Yes - details here: https://discord.com/channels/810916927919620096/810929015509483554/1356263469527339121
+
+{Reactions}
+🫡 
+
+[04/03/2025 10:52] bugsfinder0x
+Guys  what does it mean sufficient in the triage field?
+
+
+[04/03/2025 12:37] cloudellie
+validator found the submission to be of sufficient quality to share with the sponsor
+
+
+[04/03/2025 12:54] buggsy__
+how can i defend my issue if i cant comment ?
+
+
+[04/03/2025 12:59] buggsy__
+I think my issue is unfairly judged and disputed
+
+
+[04/03/2025 12:59] buggsy__
+how can i defend it ?
+
+
+[04/03/2025 13:00] cloudellie
+Escalations are only available to wardens with the SR role. Please refer to this post for more details: https://discord.com/channels/810916927919620096/810936719003090974/1356599510331293788
+
+
+[04/03/2025 13:00] buggsy__
+just great
+
+
+[04/03/2025 13:31] buggsy__
+My issue is marked as valid then insufficient , and is commented by the sponsor (disputed)
+
+
+[04/03/2025 13:31] buggsy__
+Will the issue be seen/ judged by the judge  if marked insufficient
+
+
+[04/03/2025 13:32] buggsy__
+And its duplicated wrongly
+
+{Reactions}
+🙂 
+
+[04/03/2025 13:34] thebrittfactor
+The judge will review all submissions, if not spam
+
+
+[04/03/2025 14:46] 0xslowbug
+This is happening because it’s the first time it’s happening on C4 
+
+Allowing one comment only on the platform wouldn’t hurt the Judging process
+
+Longer? Maybe but more accurate? Yes. What are you trading for accuracy or time?
+
+
+[04/03/2025 14:50] pfapostol
+This is an incredibly high-cost compromise, you can't imagine how many people believe that their obviously invalid findings were just misjudged and think the judges are just stupid and clueless about their submission.
+
+{Reactions}
+👏 (5) 
+
+[04/03/2025 15:52] buggsy__
+when is the PJQA ,after the judging ? and when can we comment to defend our issue , after the judging phase ?
+
+
+[04/03/2025 15:53] deeney3866
+If you don't have SR role you can't comment during PJQA.
+
+
+[04/03/2025 15:55] buggsy__
+my problem is ,  its deemed valid and high but insufficient ? insufficient comment is because i havent provided code snippet , in the issue there are links to the affected code thus (code snippet is provided ) and the problem is explained
+
+
+[04/03/2025 15:58] buggsy__
+so its unfairly put as insufficient
+
+
+[04/03/2025 16:22] 0xbyteknight
+Well, if judge will support the validator opinion...then well, it will be a tough lesson 😦
+But I don't think you have options if you are not SR
+
+
+[04/03/2025 16:22] buggsy__
+Sponsor has disputed it i get that i cant defend because i have no sr role i just want to atleast be judged 😆
+
+
+[04/03/2025 16:23] buggsy__
+Ah, so it will reach the judge
+
+
+[04/03/2025 16:23] 0xbyteknight
+According to more experienced folks, judges will review all submissions
+So yeah, it should be reviewed again. But you cannot add anything to what you have already written
+
+
+[04/03/2025 16:24] buggsy__
+So right now is not pjqa after this judging phase is pjqa i just want to know for future contests
+
+
+[04/03/2025 16:26] 0xbyteknight
+Here are the stages of audit verification for a reference
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/Screenshot_2025-04-03_at_18.25.30-72342.jpg
+
+{Reactions}
+🧡 
+
+[04/03/2025 20:41] benterkiii
+select the appropriate risk level of the severity ❌ 
+High ✅
+
+
+[04/03/2025 21:15] mwendwa
+What does it mean when triage marked high, valid and sufficient but review is disputed?
+
+
+[04/03/2025 21:25] kalogerone
+Guys everything means nothing until judge makes decision
+
+{Reactions}
+✅ (8) 😅 (2) 
+
+[04/04/2025 07:37] bugsfinder0x
+Looking at the issue is the same as I highlighted to the sponsor in a private thread during the audit.
+The response was that the issue was not in scope.
+What if the issue will be validated now?
+
+
+[04/04/2025 07:47] benterkiii
+I think we should not rely on the sponsor opinion in some cases, they are trusting us as the experts
+
+
+[04/04/2025 07:49] bugsfinder0x
+For this reason, i'm not understanding why they told me that wasn't in scope.
+
+
+[04/04/2025 08:54] _hard1k
+So it's possible if a finding was downgraded in the triage and then in the judging phase the judge can upgrade it as well if he thinks of it as a higher severity right?👀
+
+
+[04/04/2025 11:33] thebrittfactor
+It's possible, but up to judge discretion.
+
+{Reactions}
+👍🏻 
+
+[04/04/2025 11:43] thebrittfactor
+This [section](https://docs.code4rena.com/other-details/frequently-asked-questions#do-judges-have-the-final-say) of our docs may be helpful. If you have factual evidence of a finding, you're welcome to submit.
+
+
+[04/04/2025 19:53] officialcipherr
+Still asking this same question, what does it mean when review is disputed
+
+
+[04/04/2025 20:10] 0xbyteknight
+I guess sponsors doesn’t agree that submitted issue is not a problem from their point of view. Correct me if I’m wrong
+
+{Reactions}
+👍 
+
+[04/04/2025 20:28] officialcipherr
+I feel the same way, but I think it's still left to the judge to make the final decision, this is literally my first audit in any platform so I don't really know how things are done here
+
+
+[04/04/2025 21:20] 0xpetern
+You really don't have to worry too much until the judge makes his decision.
+
+
+[04/04/2025 22:06] officialcipherr
+Okay thanks
+
+
+[04/05/2025 13:39] bugsfinder0x
+The only way i can confirm the issue is via the private thread, during the audit, with the sponsor.
+Anyway, the issue looks like this one:
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/F-1
+
+{Embed}
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/F-1
+F-1 evaluate finding | Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/c4-og-v2-64B78.png
+
+
+[04/05/2025 23:26] thebrittfactor
+Thats understandable. However, please remember the judge ultimately has the final say on validity, so if you have factual evidence and are confident in the vulnerability, it may be ideal to submit either way.
+
+
+[04/06/2025 11:05] kanegoldsmith
+@thebrittfactor | C4  S-552 is casted incorrecty to F-27 istead of F-29
+
+{Reactions}
+✅ thankyou 
+
+[04/06/2025 11:52] mylifechangefast.eth_70767
+Wen!
+
+
+[04/06/2025 17:35] werulez99
+So there are 4 valid eligible issues for reward , right ? just curious
+
+
+[04/06/2025 18:21] teoslaf1
+is there a way to request reconsideration when my submission was rejected but another submission identifying the same vulnerability was accepted? Thank you 🙏
+
+
+[04/07/2025 07:37] mylifechangefast.eth_70767
+Wen!
+
+
+[04/07/2025 08:14] cd_pandora
+On DN
+
+{Reactions}
+😂 (2) 
+
+[04/07/2025 12:59] 0xsyntellect
+I am also on the same boat. Sponsor commented that protocol would continue operating as normal but it wont. Not sure how to proceed since I cannot comment.
+
+
+[04/07/2025 13:10] 0xbyteknight
+Same here… I don’t think we have much to say at this point
+
+
+[04/07/2025 13:42] cd_pandora
+I give up 😂. Triage validated the max approval issue, judge invalidated. 
+
+Second one leads to fund loss, but because its a trusted role, judge downgrades to low. And low is ineligible for payout. 
+
+Third one is design choice.
+
+I never try? 😂
+
+{Reactions}
+😂 (4) 
+
+[04/07/2025 13:42] cd_pandora
+Considering a 9-5 atp.
+
+
+[04/07/2025 13:46] cd_pandora
+https://tenor.com/view/andarxrr-gif-8928526013272598729
+
+{Embed}
+https://tenor.com/view/andarxrr-gif-8928526013272598729
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/andarxrr-94857.png
+
+
+[04/07/2025 13:55] 0xbyteknight
+That’s tough 🥲
+Maybe next time
+
+
+[04/07/2025 13:56] cd_pandora
+The fact we can’t comment on issues is another disadvantage. But yeah, will put in more effort next contest 🤝
+
+{Reactions}
+🔥 
+
+[04/07/2025 14:37] mrfalsegenius
+Can you share links?
+
+
+[04/07/2025 14:39] pro_king1
+WTF. Isn't this out of scope????
+
+
+[04/07/2025 14:45] mrfalsegenius
+Can anyone explain why this is invalid? The idea is, you get rewards according to the amount you reallocated to. Users can get more rewards than the swapped amount because of existence of these lines here,
+```
+    uint256 balanceOfSender = tokenReceived.balanceOf(msg.sender); <---!
+     ...
+     ...
+    SafeERC20.safeTransferFrom(tokenReceived, msg.sender, address(this), balanceOfSender); <---!
+
+```
+
+
+[04/07/2025 14:46] mrfalsegenius
+Don't give up! 9-5 is like this
+
+{Reactions}
+💜 
+
+[04/07/2025 14:46] mrfalsegenius
+https://tenor.com/view/richard-attenborough-whip-whipped-whiplash-whiplashed-gif-8038917888032528445
+
+{Embed}
+https://tenor.com/view/richard-attenborough-whip-whipped-whiplash-whiplashed-gif-8038917888032528445
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/richard-attenborough-whip-64C54.png
+
+
+[04/07/2025 15:24] attentioniayn
+My best guess is that the checks to make sure that the reallocations are eligible will be done off-chain, therefore this is arguably a design choice
+
+
+[04/07/2025 15:36] jivko.donchev2
+Does this mean it`s medium again or the finding is not even low?
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-73AD4.png
+
+
+[04/07/2025 15:48] mrfalsegenius
+Damn, that `will be done off-chain` statement just doesn't feel right in this case. Welp, another vuln going in the bin!
+
+
+[04/07/2025 15:51] thebrittfactor
+Correct, it was reverted back to Medium.
+
+{Reactions}
+❤️ 
+
+[04/07/2025 16:16] 0xsorrynotsorry
+This should be Low
+
+
+[04/07/2025 16:16] jivko.donchev2
+Then, why is it crossed out?
+
+
+[04/07/2025 16:17] 0xsorrynotsorry
+not sure 🤔
+
+{Reactions}
+👀 
+
+[04/07/2025 16:52] mrfalsegenius
+Who's the judge for this contest?
+
+
+[04/07/2025 16:57] 0xsorrynotsorry
+how do you see it now?
+
+
+[04/07/2025 18:49] 0xspryon
+Hi @thebrittfactor | C4 , got a question.
+
+
+[04/07/2025 18:50] thebrittfactor
+Please create a private thread with your question.
+
+
+[04/07/2025 18:59] 0xspryon
+done
+
+
+[04/07/2025 19:56] loptuskr
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-447
+
+hi how do you guys think about it?
+
+
+[04/07/2025 20:08] elvisvan
+nick franklin was a trusted security researcher in the space for over a year, even if these new admins/protocols are trusted they can make mistakes by inputting the wrong number, yes users can see holding requirements in overview panel before joining but without safeguards what say they cannot accidentally overlook that piece of info? 
+
+i say the bug is valid
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-0CE58.png
+
+{Reactions}
+👍 
+
+[04/07/2025 20:11] thebrittfactor
+ℹ️ Please ensure we are not discussing findings publicly until the audit report is published. We're currently still in the judging phase, so we appreciate your patience!
+
+
+[04/07/2025 20:16] loptuskr
+appreciate your opinion
+
+
+[04/07/2025 20:17] loptuskr
+sorry about that! i will be careful, thank you
+
+{Reactions}
+thankyou hi5 
+
+[04/07/2025 21:21] attentioniayn
+https://docs.code4rena.com/awarding/judging-criteria/supreme-court-decisions-fall-2023
+
+Recommended read if you wanna understand how issues are judged and why ^^
+
+{Embed}
+https://docs.code4rena.com/awarding/judging-criteria/supreme-court-decisions-fall-2023
+Decisions from the inaugural Supreme Court session, Fall 2023 | Cod...
+
+
+[04/07/2025 22:09] mike_bello90
+With all due respect, I would like to say that this report is a Medium not a High https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/F-14 as there is no loss of rewards or tokens for the users, only a partial Dos. Other reports on this contest that reported a reward loss or a target token loss were marked as medium, so based on that, this F-14 reports cannot be marked as high if there is no loss to users.
+
+{Reactions}
+❌ (3) 
+
+[04/08/2025 04:43] mhu_kalii
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-475     i wish having SR role
+
+
+[04/08/2025 05:12] mrfalsegenius
+The triage comment doesn't quite reflect why it's invalid, but it is invalid.
+
+
+[04/09/2025 08:23] welith
+The issue outlines how the entire protocol can be DoS-ed for prolonged times, so why is it not a High? The attacker can execute the transaction an arbitrary number of times without any cost, thus disabling the main function of the whole protocol.
+
+{Reactions}
+✅ (6) 
+
+[04/09/2025 08:56] elser17
+Hi, I would like to know why this issue is invalid: https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-897, an ERC20 token can potentially have 0 decimals (< 6 decimals in scope in the contest), right?
+
+
+[04/09/2025 10:23] l9baldur
+How is that a partial DOS, if as an attacker I can DOS the main functionality of the protocol essentially forever ?
+
+
+[04/09/2025 12:47] loptuskr
+this issue could be a medium?
+
+
+[04/09/2025 15:55] mike_bello90
+Hello, I want to comment on this here in the chat because, unlike other platforms, I see that C4 doesn't allow me to comment directly on the report:
+
+I see that all my previously confirmed reports have been invalidated. A couple of my reports were invalidated with a comment like this below, which basically says it's invalid because the cause originates externally to the scoped contracts.
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-A330A.png
+
+
+[04/09/2025 15:55] mike_bello90
+But as is well known, bugs typically originate from the interactions that scoped contracts have with other systems, this has been accepted in virtually all previous and current contests. Additionally, what I reported affects users and scoped contracts, causing a DOS and loss of rewards, which had already been accepted in the previous stages of this contest.
+If the fact that the bug does not originate or start in a scope contract but in an external element that interacts with the scope contracts is a valid way to invalidate a report, then the two accepted reports would also be invalid because both depend on or originate from the li.fi executor contract, which is not part of the scope but does interact with the scope contracts. However, these reports were accepted as valid, therefore, it is incorrect that other reports originating from the interactions of scope contracts with other elements are invalidated even when the scope contracts and protocol users are affected by these bugs. In this case, the correct approach would be to apply the same validation/invalidation rule to all contest reports,  and not only to some reports.
+
+
+[04/09/2025 15:55] mike_bello90
+Specifically, this report is about a bug in cross-chain reallocations and what the comment is basically saying is the way cross-chain reallocations work in nudge, so based on the rules stated on the contest page, cross-chain reallocations are in scope, so the way nudge handles these cross-chain reallocations is in scope as well.
+
+{Reactions}
+👍 (2) 
+
+[04/09/2025 16:12] thebrittfactor
+ℹ️ Please ensure we are not discussing findings publicly until the audit report is published. We're currently still in the judging phase, so we appreciate your patience!
+
+{Reactions}
+👍 🆗 
+
+[04/10/2025 11:49] derastephh
+Been waiting for a report
+
+
+[04/10/2025 15:46] mylifechangefast.eth_70767
+Omo see wetin c4 don cause😂
+
+
+[04/11/2025 19:37] lucky2892000
+usually after how many days do we get the audit report from when judging starts ?
+
+
+[04/11/2025 19:42] thebrittfactor
+Timing of reports vary a fair amount depending on the amount of submissions received and any discussions needed. PJ QA just kicked off, so I'd expect we could be ready to publish the report in a couple weeks, pending sponsor review and approval.
+
+
+[04/11/2025 22:03] mike_bello90
+Now that we are in a post judging QA  I supposed I can comment on my findings right?
+
+
+[04/11/2025 23:06] saaitaamaa
+where/how can we ask questions about our findings please ?
+
+
+[04/12/2025 04:49] pfapostol
+Ideally, nowhere, since it is directly prohibited to discuss the findings until report is out. But in reality, after last update, it doesn't stop anyone to discuss them in a public chat for the last 1.5 week
+
+
+[04/12/2025 13:43] cd_pandora
+Anyone with Sr role help me escalate a finding?
+
+
+[04/12/2025 14:45] loptuskr
+if there is not marked, what does it mean?
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-5FB36.png
+
+{Reactions}
+👆 
+
+[04/12/2025 17:54] aarif02
+Actually no one will do that. It's prohibited.
+
+
+[04/12/2025 17:54] aarif02
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/image-1-CD179.png
+
+
+[04/12/2025 18:09] cd_pandora
+Oh. Ive never read T&C’s before
+
+
+[04/12/2025 18:09] cd_pandora
+Thank you
+
+
+[04/12/2025 18:13] aarif02
+Bro 🤜
+
+
+[04/13/2025 06:24] 0xbnke
+Hello, could you please let me know how I can comment on my own findings? I’m not seeing the option.
+
+
+[04/13/2025 07:06] aarif02
+You need an SR role for you to comment or escalate your finding.
+
+{Reactions}
+😭 (3) 
+
+[04/13/2025 18:47] elser17
+Anyone could clarify about this plz 🙂
+
+
+[04/14/2025 04:22] mrfalsegenius
+It's because your report and the PoC zooms in on using tokens with 0 decimals which the protocol would never add. Yes, `< 6 decimals` is in scope, but the admin would only add tokens with actual decimals (`> 0`). Maybe you should've confirmed that. 
+
+The protocol wanted you to find an issue where, when they add a low-decimal token i.e., 2 decimals, it would result in code bugging out or giving 0 rewards etc...
+
+The `0 rewards because of a 0 decimal token` is like the universal truth. 
+
+The judge probably asked the team,
+`Hey, which low-decimal ERC20s are we dealing with here?` 
+
+Team:
+`Anything < 6. So for example, we could go with something that has 2~3 decimals i.e., GUSD`.
+
+Judge:
+`What about 0 decimals?`
+
+Team:
+`Nah`
+
+Judge:
+`Cool`
+
+**Proceeds to invalidate S-897**
+
+
+I am no judge so all of this might be a reach, but that's all from me. ✌️
+
+{Reactions}
+✅ (2) 
+
+[04/14/2025 06:29] aarif02
+Well explained 🤗
+
+{Reactions}
+❤️ 
+
+[04/14/2025 10:16] 0xbnke
+Hi, I would like to know why this issue is invalid: https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-532
+
+{Embed}
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-532
+S-532 evaluate submission | Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/c4-og-v2-64B78.png
+
+
+[04/14/2025 10:22] karthik6783
+They can change it whenever they want, and there is no risk of any loss of funds or stealing of funds
+
+
+[04/14/2025 11:16] 0xbnke
+The system assumes that only trusted administrators can change these parameters. The comment  “ @sorryNotsorry / admins are trusted” implies that this design choice is based on trust.
+
+Relying on trust alone can be risky. For example, if an admin account gets hacked or if an admin makes a mistake, the fee could be set too Zero, potentially hurting the protocol or benefiting someone in an unfair way.
+
+
+[04/14/2025 11:33] dot_cloud
+issue stating admin can get hacked or admin can makes input mistake is always out of scope
+
+{Reactions}
+💀 
+
+[04/14/2025 11:33] 0xsorrynotsorry
+Hi,
+I don't say you're wrong,
+but there is a verdict about it.
+You can check the centralization risks here: https://docs.code4rena.com/awarding/judging-criteria/supreme-court-decisions-fall-2023
+
+{Embed}
+https://docs.code4rena.com/awarding/judging-criteria/supreme-court-decisions-fall-2023
+Decisions from the inaugural Supreme Court session, Fall 2023 | Cod...
+
+
+[04/14/2025 11:48] elser17
+The issue says that POTENTIALLY a token used could have 0 decimals, the readme only accepts < 6 decimals tokens in scope, which includes 0 decimal tokens; it does not exclude 0 decimal tokens from scope. 0 decimals token is the example used to show the impact in the PoC, but the same root cause and similar impact would be valid for 2-3 token decimals, is this correct @sorryNotsorry ?
+
+{Reactions}
+👍 
+
+[04/14/2025 12:50] cloudellie
+Hey @0xDemon - this is explicitly prohibited in the Code4rena docs; see https://discord.com/channels/810916927919620096/1347260216093311006/1360674429297885326. Please remove your message.
+
+If you have constructive feedback for C4 staff regarding our policies, the appropriate place for that is the #📥・suggestion-box channel.
+
+
+[04/14/2025 12:55] 0xdemonnn
+my bad
+
+{Reactions}
+thankyou 
+
+[04/14/2025 13:13] 0xsorrynotsorry
+Hi,
+
+I stepped out from Judging due to family reasons. But since this contest is in PJQA, it means the new judge already evaluated your issue.
+
+{Reactions}
+👍 
+
+[04/14/2025 13:18] elser17
+Where can I see his comments about the issue? About escalations on issues, are they done typically in the contest channel (like this) or is there a method to do it on C4?
+
+
+[04/14/2025 13:21] thebrittfactor
+Judge comments will be included at the bottom of the issue in-app, if provided. Regarding escalations, only SR wardens are able to participate in PJ QA. Their comments are also added in-app.
+
+{Reactions}
+❤️ 
+
+[04/14/2025 13:22] elser17
+Thx, how long is the period for escalations? Is there any announcement when it starts?
+
+
+[04/14/2025 13:23] elser17
+Just to know whether I can still escalate
+
+
+[04/14/2025 13:24] thebrittfactor
+PJ QA is open for 48 hours and has since closed for this audit. The judge may opt to re-open comments pending their review of the received issues. However, it doesn't look like you have the [SR role](https://docs.code4rena.com/roles/certified-contributors/sr-backstage-wardens), so you'll be unable to participate in escalations.
+
+
+[04/14/2025 13:25] elser17
+How do I get it? Any requirements?
+
+{Reactions}
+🧵 
+
+[04/14/2025 17:10] kann_p
+@MrPotatoMagic 
+
+ S-700 – Not a Unique Finding, Should Be Duplicated to F-8
+Let’s start with the frontrunning aspect.
+
+The protocol is expected to be deployed on both mainnet and L2 chains. However, frontrunning on L2s is significantly harder due to differences in how transactions are sequenced and how mempools operate — in most cases, frontrunning is simply not viable.
+
+Even on Ethereum mainnet, the proposed attack is highly impractical. An attacker would need to:
+
+Take out a flashloan,
+
+Initiate a swap with a higher gas fee to frontrun a legitimate user,
+
+And ultimately just cause that user’s transaction to revert.
+
+The result? A denial-of-service (DoS) against one user, with no financial gain to the attacker. It’s a griefing attack at best — expensive, ineffective, and ultimately pointless. There's no incentive for anyone to attempt this in practice.
+
+Now, let’s consider a scenario without a flashloan — where an attacker simply frontruns to claim rewards before someone else. That’s not an issue either. It’s expected behavior. Once the reward pool is drained, any further participation will rightly revert. That’s part of how the system is designed to work.
+
+On the other hand, if a flashloan is used to temporarily boost participation and manipulate rewards:
+
+The loan must be repaid in the same transaction.
+
+That causes the attacker’s participation to become invalid.
+
+Any claimed rewards would be refunded.
+
+So again, there’s no real benefit — just unnecessary gas costs.
+
+But the more important point is this:
+
+All of the core impact — especially the risk of permanent campaign DoS — is already covered in F-8 and S-790 since if repeatedly pulled of the protocol consumes the whole fees since they are not getting refunded
+
+{Reactions}
+👍 (3) 
+
+[04/14/2025 17:10] kann_p
+The idea that the campaign can be permanently disabled through repeated participation attempts (whether frontrun, flashloaned, or not) has already been accepted and documented. S-700 does not introduce a new vector; it simply describes a specific variation of an already known and accepted problem.
+
+As such, S-700 should be marked as a duplicate of F-8 , as it does not demonstrate a distinct vulnerability or meaningful new risk.
+
+
+[04/14/2025 17:29] mrpotatomagic
+Please note that findings should not be discussed publicly before the report is published. Both @sorryNotsorry and I have provided our reasoning in the comments with sufficient proof for all issues.
+
+{Reactions}
+👆 (2) 
+
+[04/14/2025 18:08] kann_p
+Just to add a final note regarding the decision by the judge on S-700:
+
+First bullet point from the judge comment on escalation admits that this issue shares a fragment of the same root cause as F-8 
+
+Second bullet point literally acknowledges that the impact is exactly the same — which reinforces the argument that this is not a unique finding.
+
+Third bullet point says that solving the primary issue doesn’t fix the issue here. That might be true in a theoretical sense, but as I previously wrote: you cannot prevent frontrunning, but pulling this off in L1 by wasting an enormous amount of gas just to frontrun and DOS a single user doesn't make sense. It’s not worth it. In L2, we already know this can’t realistically be pulled off at all.
+
+Basically the only thing that is being added to this "unique report" is the frontrunning part
+
+Sorry to any wardens reading this — I'm trying to word this carefully to avoid revealing or discussing anything unnecessary from the reports, especially since I’ve been warned once before.
+
+That said, I think the judge should really reconsider the result here. For me, this is my final message for this report. 🫡
+
+
+[04/14/2025 18:42] cd_pandora
+I think auditors deserve the right to drop comments on their findings on the C4 platform tho regardless of the SR role
+
+
+[04/14/2025 18:43] kann_p
+Incorrect you have not understand the situation at all. It should remain medium but as a duplicate of F-8 as I mentioned.
+
+
+[04/14/2025 19:14] welith
+@MrPotatoMagic hello sir… sorry for tagging you, but do you plan to open comments for the newly appeared unique, so that SRs can comment and gather some info on how the issue could be scaled to affect more than one user per execution? thx in advance!
+
+
+[04/14/2025 19:41] mrpotatomagic
+Unfortunately no, I've updated the primary issue to answer that. I believe the respective wardens have provided more than enough proof for the issue at hand.
+
+
+[04/14/2025 21:43] cd_pandora
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-212 I actually believe this should be a medium issue as participants will lose funds
+
+{Embed}
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-212
+S-212 evaluate submission | Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/c4-og-v2-64B78.png
+
+
+[04/14/2025 22:59] thebrittfactor
+ℹ️ Reminder of our [fairness and validity](https://docs.code4rena.com/awarding/fairness-and-validity#if-you-disagree-with-a-judges-decision) doc and also our [Good Citizen](https://docs.code4rena.com/roles/wardens/submission-guidelines#good-citizenship-is-a-requirement-for-compensation) policy.
+
+
+[04/15/2025 05:03] t0x1c.c0de
+Hi @thebrittfactor | C4 @MrPotatoMagic 
+Just wanted to get some clarity on severity classification as per C4 rules.
+
+Even if a vulnerability can be repeatedly carried out DoSing the protocol continuously, is it a Medium severity? (No preconditions required)
+
+I should mention that no "direct fund loss" happens but then again no user is able to use the protocol, so not sure if that's considered a fund loss or not?
+
+P.S.: does profitability of the attack in such a case bear any impact on severity?
+
+I am asking with S-700 in mind (not mentioning any details about the issue as I understand that's not allowed), since I thought it would be `High` and not a `Med`.
+
+
+[04/15/2025 06:06] loptuskr
+this issue could be med or high?
+
+
+[04/15/2025 06:44] derastephh
+Report not out yet?
+
+
+[04/15/2025 08:26] cloudellie
+I would suggest asking this in the #❓・questions channel and asking some judges to weigh in, as it's a nuanced question and pertains to C4 severity definitions more broadly than this specific audit.
+
+{Reactions}
+👍🏻 
+
+[04/15/2025 08:31] werulez99
+This issue is DoSing only a single user , but the F-14 is DoSing the whole protocol becomes unusable and it's Med lol , so yeah ...Even thought the protocol insolvency is clear 💀
+
+
+[04/15/2025 15:17] elser17
+Hi @thebrittfactor | C4 , I think I have now the SR role could you please confirm? I would like this issue we talked about to be reconsidered, please: https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-897
+
+{Embed}
+https://code4rena.com/evaluate/2025-03-nudgexyz/submissions/S-897
+S-897 evaluate submission | Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-PUBLIC - nudgexyz-mar [1347260216093311006].txt_Files/c4-og-v2-64B78.png
+
+
+[04/15/2025 15:19] elser17
+I cannot see the comments of the new judge in the issue as said in this message by the previous judge.
+
+
+[04/15/2025 15:19] elser17
+The issue says that POTENTIALLY a token used could have 0 decimals, the readme only accepts < 6 decimals tokens in scope, which includes 0 decimal tokens; it does not exclude 0 decimal tokens from scope. 0 decimals token is the example used to show the impact in the PoC, but the same root cause and similar impact would be valid for 2-3 token decimals.
+
+
+[04/15/2025 15:21] thebrittfactor
+I will check on your SR role status. However, PJ QA comments were closed for the Nudge audit on April 13th.
+
+
+[04/15/2025 15:27] elser17
+😦
+
+
+[04/15/2025 18:48] elser17
+Could you explain me about comments of the new judge on the issue pls? @thebrittfactor | C4
+
+
+[04/16/2025 17:55] thebrittfactor
+🤑 🎉  Awards for **Nudge.xyz**:
+
+$4,080.35 USDC » @0xDemon
+$3,334.89 USDC » @Mike
+$2,258.16 USDC » @hgrano
+$2,258.16 USDC » @t0x1c
+$1,830.53 USDC » @Luc1jan
+$793.54 USDC » @hakunamatata
+$610.41 USDC » 056Security (@0xb0k0 and @stanchev)
+$610.41 USDC » HaidutiSec (@Lyubo and @Merulez99)
+$610.41 USDC » @0xShitgem
+$610.41 USDC » @0xkrodhan
+$0.08 USDC » @yusufroqib
+$0.06 USDC » @0xN3x
+$0.06 USDC » @VAD37
+$0.06 USDC » @edger
+$0.06 USDC » @4th05
+$0.06 USDC » @Kazan
+$0.06 USDC » @0xfalconHoof
+$0.06 USDC » @bobai23_
+$0.06 USDC » @audityourcontracts (AYC)
+$0.06 USDC » @merlin
+$0.06 USDC » @mahdifa
+$0.06 USDC » KannAudits (@!Kann | Kann Audits and @Erko)
+$0.06 USDC » @cryptomoon
+$0.06 USDC » @Weed0607
+$0.06 USDC » @frndz0ne
+$0.06 USDC » @steadyman
+$0.06 USDC » @0xrex
+$0.06 USDC » @Breeje
+$0.06 USDC » @Heheboii
+$0.06 USDC » @leegh
+$0.06 USDC » @Pelz
+$0.06 USDC » @tusharr1411
+$0.06 USDC » phaseTwo (@yudhx and @MaanVad3r)
+$0.06 USDC » Ikigai (@Artur and @phrax)
+$0.06 USDC » @SpicyMeatball
+$0.06 USDC » @seeques
+$0.06 USDC » @hl_
+$0.06 USDC » @d3e4
+$0.06 USDC » @immeas
+$0.06 USDC » @franfran20
+$0.06 USDC » @10ap17
+
+
+[04/16/2025 17:55] thebrittfactor
+$0.06 USDC » HalalAudits (@Halalauditor and @Lookman)
+$0.06 USDC » @lime
+$0.06 USDC » @moray5554
+$0.06 USDC » @Kalogerone
+$0.06 USDC » @SancyBars
+$0.06 USDC » @BroRUok
+$0.06 USDC » @zarkk01
+$0.06 USDC » @y4y
+$0.06 USDC » @Uddercover
+$0.06 USDC » @crunter
+$0.06 USDC » @givn
+$0.06 USDC » @0xrochimaru
+$0.06 USDC » @Mylifechangefast.eth
+$0.06 USDC » @Timeless
+$0.06 USDC » ChainProof (@Yas000X and @takarez)
+
+🏁 Findings summary
+-------------------------------------
+0 High risk findings
+4 Med risk findings
+1078 wardens participated
+
+Top Hunter: 0xDemon and Mike_Bello90
+Top Gatherer: hgrano and t0x1c
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+⚠️ Awardees, be sure to [complete your tax reporting info](https://docs.code4rena.com/awarding/incentive-model-and-awards/awarding-process#tax-information-for-code4rena-contributors-wardens-judges-etc) if you haven't already. This must be completed within 30 days (i.e. before Friday, 16 May 2025) to receive your award distribution for this audit.
+
+{Reactions}
+c4wins (9) chefskiss 
+
+[04/16/2025 18:25] 10ap17
+congrats @Luc1jan 🎉
+
+
+[04/16/2025 18:42] mylifechangefast.eth_70767
+@Mike nice one
+
+{Reactions}
+❤️ 
+
+[04/16/2025 19:00] dot_cloud
+congrats sir @0xDemon
+
+{Reactions}
+🫡 ❤️‍🔥 
+
+[04/16/2025 19:03] 0xdemonnn
+Thank you sir :hi5:
+
+
+[04/16/2025 19:04] 0xdemonnn
+and congrats all 🎉
+
+{Reactions}
+🔥 (2) ❤️‍🔥 🤝 
+
+[04/16/2025 19:31] cd_pandora
+ikun pa judge oo
+
+{Reactions}
+😂 (4) 
+
+[04/16/2025 19:31] cd_pandora
+Downgraded from med to low
+
+
+[04/16/2025 19:32] cd_pandora
+congrats to the winners sha.
+
+
+[04/16/2025 19:52] sulaimon3546
+😂
+
+
+[04/16/2025 19:54] sulaimon3546
+Not able to comment on judging makes the process feel helpless sometimes.
+
+{Reactions}
+😂 👍🏻 (2) 
+
+[04/16/2025 20:14] luc1jan
+Thanks!  Congrats everyone! :c4wins:
+
+{Reactions}
+🤝 🎉 👍🏻 
+
+[04/17/2025 09:52] derastephh
+bro😂
+
+
+[04/17/2025 09:54] derastephh
+please when will the report be out
+
+
+[04/18/2025 21:34] mike_bello90
+forget about that, when payment bro lol
+
+{Reactions}
+😂 (3) 
+
+[04/20/2025 10:18] 0xslowbug
+Use my address👀
+
+{Reactions}
+😂 
+
+[04/24/2025 13:01] elvisvan
+have the reports public yet?
+
+
+[04/24/2025 15:50] thebrittfactor
+Not yet. Keep an eye out on our [reports](https://code4rena.com/reports) page.
+
+{Reactions}
+👍🏻 
+
+[06/02/2025 21:30] C4
+ℹ️ This channel is pending archive.   As a result, any private threads will be permanently deleted 06/11/2025 21:13. Please make sure to grab anything you might need before then.
+
+
+==============================================================
+Exported 725 message(s)
+==============================================================
